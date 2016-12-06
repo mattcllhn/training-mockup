@@ -1,2 +1,14 @@
 body {
-  background-color: #bada55; }
+  margin: 1em 1em; }
+  body .header h1 {
+    font-weight: bold; }
+  body .header #searchBox {
+    padding-top: .5em; }
+  body .header .nav-glyph {
+    background-color: #f79840;
+    height: 5em;
+    margin: 1em .2em;
+    padding-top: 3em;
+    width: 15%;
+    font-size: .7em;
+    color: #fff; }

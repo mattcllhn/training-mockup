@@ -6,8 +6,9 @@ var sass = require('node-sass');
 
 app.use(express.static('public'));
 
-
 app.use('/bootstrap', express.static(path.resolve ('./node_modules/bootstrap/dist/css')));
+app.use('/angular', express.static(path.resolve ('./node_modules/angular')));
+
 
 app.listen(3000,function(){
 
