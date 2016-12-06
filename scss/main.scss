@@ -16,13 +16,24 @@ body{
 	}
 	.nav-glyph{
 		background-color: $orange;
-		height:5em;
-		margin:1em .2em;
+		height:7em;
+		margin:1em .1em;
 		padding-top:3em;
-		
+
 		width: 15%;
-		font-size: .7em;
+		// font-size: .5em;
 		color: #fff;
+		list-style:none;
+
+		
+
+			a{
+
+				color:#fff;
+				font-size: 1em;
+				padding:0;
+				margin 1em auto 1em auto;
+			}
 		
 	}
 }
