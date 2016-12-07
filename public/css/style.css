@@ -1,24 +1,38 @@
 body {
-  margin: 2em .5em; }
-  body .header h1 {
-    font-weight: bold; }
-  body .header #searchBox {
-    padding-top: .5em; }
-  body .header .nav-glyph {
-    background-color: #f79840;
-    height: 7em;
-    margin: 1em .1em;
-    padding-top: 3em;
-    width: 15%;
-    color: #fff;
-    list-style: none; }
-    body .header .nav-glyph a {
+  margin: .5em .5em; }
+  body .header {
+    margin-top: 0; }
+    body .header h1 {
+      font-weight: bold; }
+    body .header #searchBox {
+      padding-top: .5em; }
+    body .header .nav-glyph {
+      background-color: #f79840;
+      height: 7em;
+      margin: 1em .1em;
+      padding-top: 3em;
+      width: 15%;
+      font-size: .5em;
       color: #fff;
-      font-size: 1em;
-      padding: 0;
-      margin: 1em auto 1em auto; }
-  body .header .header-border ul li {
-    list-style: none; }
-    body .header .header-border ul li a {
-      text-decoration: none;
-      color: #000; }
+      list-style: none; }
+      body .header .nav-glyph a {
+        color: #fff;
+        padding: 0;
+        margin: auto; }
+    body .header .header-border {
+      background-color: #bcbcbc; }
+      body .header .header-border ul li {
+        list-style: none; }
+        body .header .header-border ul li a {
+          text-decoration: none;
+          color: #000; }
+  body #main-content {
+    height: 1000px;
+    background-color: #bcbcbc; }
+    body #main-content #main-top {
+      height: 50%; }
+    body #main-content #main-bottom {
+      height: 50%; }
+  body #footer-row {
+    height: 300px;
+    border: 1px solid #000; }

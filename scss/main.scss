@@ -1,47 +1,26 @@
 @import "colors.scss";
 body{
-	margin:2em .5em;
+	margin:.5em .5em;
 
-.header{
-	h1{
-		font-weight:bold;
-	}
+@import "header.scss";
 
-	#searchBox{
-		padding-top:.5em;
-	}
-	.nav-glyph{
-		background-color: $orange;
-		height:7em;
-		margin:1em .1em;
-		padding-top:3em;
+#main-content{
+	height:1000px;
+	background-color:$lightGray;
+	
+	#main-top{
+	height: 50%;
 
-		width: 15%;
-		// font-size: .5em;
-		color: #fff;
-		list-style:none;
-
-		
-
-			a{
-
-				color:#fff;
-				font-size: 1em;
-				padding:0;
-				margin: 1em auto 1em auto;
-			}
-		
-	}
-	.header-border{
-		ul{
-		li{
-			list-style: none;
-			a{
-				text-decoration: none;
-				color:#000;
-			}
+		.tctcol{
+			
 		}
-	}
-	}
+}
+	#main-bottom{
+	height:50%;
+}
+}
+#footer-row{
+	height:300px;
+	border:1px solid #000;
 }
 }
