@@ -36,12 +36,17 @@
       position: absolute;
       bottom: 1%; }
   .header .header-border {
+    height: 50px;
     background-color: #bcbcbc; }
     .header .header-border ul li {
       list-style: none; }
       .header .header-border ul li a {
         text-decoration: none;
         color: #000; }
+    .header .header-border .navbar-nav {
+      width: 100%; }
+      .header .header-border .navbar-nav button:focus {
+        outline: 5px auto #494949; }
 
 #main-content {
   height: 1000px; }

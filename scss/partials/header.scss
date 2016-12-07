@@ -59,6 +59,7 @@
 		
 	}
 	.header-border{
+		height:50px;
 		background-color:$lightGray;
 		ul{
 		li{
@@ -68,6 +69,15 @@
 				color:#000;
 			}
 		}
+	}
+	.navbar-nav{
+		    width: 100%;
+
+		    button{
+		    	&:focus{
+		    		outline: 5px auto $darkGray;
+		    	}
+		    }
 	}
 	}
 }
