@@ -1,0 +1,42 @@
+#main-content{
+	height:1000px;
+	
+	#main-top{
+	height: 50%;
+
+
+}
+	#main-bottom{
+	height:50%;
+}
+}
+
+.img-wrapper{
+	position: relative;
+	margin-top: 15px;
+
+}
+.img-text{
+	position: absolute;
+	background-color:$blue;
+	color:white;
+	top:0;
+	right:0;
+	bottom:0;
+	left:50%;
+
+	h5 {
+		margin-left:10px;
+
+	}
+	h6{
+		margin-left:10px;
+	}
+	p{
+		position:absolute;
+		bottom:5%;
+		right:5%;
+		font-size: .75em;
+
+	}
+}

@@ -1,26 +1,7 @@
 @import "colors.scss";
-body{
-	margin:.5em .5em;
+	// margin:.5em .5em;
 
-@import "header.scss";
+@import "partials/header.scss";
+@import "partials/body.scss";
 
-#main-content{
-	height:1000px;
-	background-color:$lightGray;
-	
-	#main-top{
-	height: 50%;
-
-		.tctcol{
-			
-		}
-}
-	#main-bottom{
-	height:50%;
-}
-}
-#footer-row{
-	height:300px;
-	border:1px solid #000;
-}
-}
+@import "partials/footer.scss";
