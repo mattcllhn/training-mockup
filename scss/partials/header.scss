@@ -27,16 +27,14 @@
   		    	}
   		    	&:focus{
   		    		border-color:$darkGray;
+  		    		outline: none;
   		    	}
 
   		    }
 		}
 
 	}
-	#orange-nav-wrapper{
-    margin-left: -2em;
 
-	}
 	.nav-glyph{
 		background-color: $orange;
 		height:7em;
@@ -46,7 +44,14 @@
 		font-size: .5em;
 		list-style:none;
 
-		
+			.topTiles{
+				color:white;
+				font-size: 27px;
+    			position: absolute;
+   			 	top: 15%;
+   			 	left:26%;	
+
+   			 }
 
 			a{
 
@@ -59,25 +64,36 @@
 		
 	}
 	.header-border{
-		height:50px;
-		background-color:$lightGray;
-		ul{
-		li{
-			list-style: none;
-			a{
-				text-decoration: none;
-				color:#000;
+		height:34px;
+		background-color:$lightestGray;
+
+			   			.btn {
+	   					border-radius:0;
+			
+					    	&:focus{
+					    		outline: 5px auto $lightGray;
+					    		border-radius:0;
+					    	}
+					    }
+			.navbar-nav{
+		    width: 100%;
+
+
+
+		    	ul{
+					li{
+						margin-top:7px;
+						list-style: none;
+							a{
+								text-decoration: none;
+								color:#000;
 			}
 		}
 	}
-	.navbar-nav{
-		    width: 100%;
 
-		    button{
-		    	&:focus{
-		    		outline: 5px auto $darkGray;
-		    	}
-		    }
+	
 	}
+
+
 	}
 }

@@ -19,9 +19,8 @@
         .header #searchBox #search-wrapper button:visited {
           border-color: #494949; }
         .header #searchBox #search-wrapper button:focus {
-          border-color: #494949; }
-  .header #orange-nav-wrapper {
-    margin-left: -2em; }
+          border-color: #494949;
+          outline: none; }
   .header .nav-glyph {
     background-color: #f79840;
     height: 7em;
@@ -30,29 +29,52 @@
     width: 9em;
     font-size: .5em;
     list-style: none; }
+    .header .nav-glyph .topTiles {
+      color: white;
+      font-size: 27px;
+      position: absolute;
+      top: 15%;
+      left: 26%; }
     .header .nav-glyph a {
       color: #fff;
       margin-left: -1.5em;
       position: absolute;
       bottom: 1%; }
   .header .header-border {
-    height: 50px;
-    background-color: #bcbcbc; }
-    .header .header-border ul li {
-      list-style: none; }
-      .header .header-border ul li a {
-        text-decoration: none;
-        color: #000; }
+    height: 34px;
+    background-color: #f2f2f7; }
+    .header .header-border .btn {
+      border-radius: 0; }
+      .header .header-border .btn:focus {
+        outline: 5px auto #bcbcbc;
+        border-radius: 0; }
     .header .header-border .navbar-nav {
       width: 100%; }
-      .header .header-border .navbar-nav button:focus {
-        outline: 5px auto #494949; }
+      .header .header-border .navbar-nav ul li {
+        margin-top: 7px;
+        list-style: none; }
+        .header .header-border .navbar-nav ul li a {
+          text-decoration: none;
+          color: #000; }
 
 #main-content {
   height: 1000px; }
-  #main-content #main-top {
-    height: 50%; }
-  #main-content #main-bottom {
+  #main-content .tctcol img {
+    position: absolute;
+    max-height: auto;
+    max-width: 100%;
+    overflow: hidden; }
+  #main-content .tctcol .newsWrapper {
+    background-color: #bcbcbc;
+    margin: 14px 1em 0 0;
+    padding: 1em;
+    position: relative; }
+    #main-content .tctcol .newsWrapper h5 {
+      font-weight: bold;
+      margin: 0 2em 0.25em 2em; }
+    #main-content .tctcol .newsWrapper ul, #main-content .tctcol .newsWrapper li {
+      list-style-type: square; }
+  #main-content .tctcol #main-bottom {
     height: 50%; }
 
 .img-wrapper {

@@ -1,13 +1,38 @@
 #main-content{
 	height:1000px;
-	
-	#main-top{
-	height: 50%;
+	.tctcol{
+		
+
+		img{
+			position:absolute;
+			max-height: auto;
+			max-width: 100%;
+			overflow: hidden;
+			// size:
+		}
+			
 
 
-}
+		.newsWrapper{
+
+			background-color:$lightGray;
+		    margin:  14px 1em 0 0;
+		    padding:1em;
+		    position:relative;
+		    h5{
+		    	font-weight: bold;
+    			margin: 0 2em 0.25em 2em;
+		    }
+		    ul,li{
+		    	list-style-type: square;
+
+		    }
+
+			}
+
 	#main-bottom{
 	height:50%;
+}
 }
 }
 
