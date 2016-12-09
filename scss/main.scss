@@ -3,18 +3,8 @@
 
 @import "partials/header.scss";
 @import "partials/body.scss";
-
 @import "partials/footer.scss";
 
 
 
-
-@media (min-width:992px){
-#main-content{
-	.big-box{
-		h5{
-			color:red;
-		}
-	}
-}
-}
+// @import"media-queries.scss";

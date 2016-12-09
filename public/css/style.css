@@ -57,25 +57,52 @@
           text-decoration: none;
           color: #000; }
 
+.boxH5, #main-content .big-box .box-wrapper .box-h-divider h5, #main-content .short-box .box-wrapper .box-h-divider h5, #main-content .small-box .box-wrapper .box-h-divider h5, #main-content .big-box h5, #main-content .short-box h5, #main-content .small-box h5 {
+  font-weight: bold;
+  font-size: 45px;
+  position: absolute;
+  left: .25em;
+  top: 3em;
+  color: yellow; }
+
 #main-content {
   height: 1000px; }
   #main-content .big-box, #main-content .short-box, #main-content .small-box {
     height: 500px;
-    background-color: #bcbcbc;
+    position: relative;
     border: 1px solid black; }
-    #main-content .big-box h5, #main-content .short-box h5, #main-content .small-box h5 {
-      font-weight: bold;
-      font-size: 50px;
+    #main-content .big-box .box-wrapper, #main-content .short-box .box-wrapper, #main-content .small-box .box-wrapper {
       position: absolute;
-      left: 3em;
-      top: 3em; }
-  #main-content .short-box, #main-content .small-box {
-    height: 250px; }
+      top: 10px;
+      bottom: 10px;
+      right: 10px;
+      left: 10px;
+      background-color: #bcbcbc;
+      border: 1px solid black; }
+      #main-content .big-box .box-wrapper .box-h-divider, #main-content .short-box .box-wrapper .box-h-divider, #main-content .small-box .box-wrapper .box-h-divider {
+        position: relative;
+        width: 100%;
+        border: 1px solid black;
+        height: 50%;
+        background-color: lightblue; }
+        #main-content .big-box .box-wrapper .box-h-divider h5, #main-content .short-box .box-wrapper .box-h-divider h5, #main-content .small-box .box-wrapper .box-h-divider h5 {
+          top: 2em;
+          font-size: 42px; }
+      #main-content .big-box .box-wrapper .dropdown-content, #main-content .short-box .box-wrapper .dropdown-content, #main-content .small-box .box-wrapper .dropdown-content {
+        display: none; }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #main-content .big-box h5 {
+    color: green; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #main-content .big-box h5 {
+    color: red; } }
+
+@media (min-width: 1200px) {
+  #main-content .big-box h5 {
+    color: blue; } }
 
 #footer-row {
   height: 300px;
   border: 1px solid #000; }
-
-@media (min-width: 992px) {
-  #main-content .big-box h5 {
-    color: red; } }
