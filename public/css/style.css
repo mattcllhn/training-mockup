@@ -59,9 +59,9 @@
           color: #000; }
 
 /*body.scss*/
-.boxH5, #main-content .big-box .box-wrapper .h-subdivider-top, #main-content .big-box .box-wrapper .h-subdivider-bottom, #main-content .short-box .box-wrapper .h-subdivider-top, #main-content .short-box .box-wrapper .h-subdivider-bottom, #main-content .small-box .box-wrapper .h-subdivider-top, #main-content .small-box .box-wrapper .h-subdivider-bottom, #main-content .big-box .box-wrapper .box-h-divider h5, #main-content .short-box .box-wrapper .box-h-divider h5, #main-content .small-box .box-wrapper .box-h-divider h5, #main-content .big-box h5, #main-content .short-box h5, #main-content .small-box h5 {
+.boxH5, #main-content .big-box .box-wrapper .h-subdivider-top .md-txt-wrapper, #main-content .big-box .box-wrapper .h-subdivider-bottom .md-txt-wrapper, #main-content .short-box .box-wrapper .h-subdivider-top .md-txt-wrapper, #main-content .short-box .box-wrapper .h-subdivider-bottom .md-txt-wrapper, #main-content .small-box .box-wrapper .h-subdivider-top .md-txt-wrapper, #main-content .small-box .box-wrapper .h-subdivider-bottom .md-txt-wrapper, #main-content .big-box .box-wrapper .box-h-divider h5, #main-content .short-box .box-wrapper .box-h-divider h5, #main-content .small-box .box-wrapper .box-h-divider h5, #main-content .big-box h5, #main-content .short-box h5, #main-content .small-box h5 {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 15px;
   position: absolute;
   top: .5em;
   color: white; }
@@ -77,10 +77,11 @@
     bottom: 0;
     left: 0;
     right: 0;
-    top: 6em;
+    top: 8em;
     margin: 0;
     padding-top: 1em;
-    font-size: 12px; }
+    padding-left: 1em;
+    font-size: 10px; }
   .tiny-box p, #main-content .big-box .box-wrapper .h-subdivider-bottom #tiny-box-right p, #main-content .short-box .box-wrapper .h-subdivider-bottom #tiny-box-right p, #main-content .small-box .box-wrapper .h-subdivider-bottom #tiny-box-right p, #main-content .big-box .box-wrapper .h-subdivider-bottom #tiny-box-left p, #main-content .short-box .box-wrapper .h-subdivider-bottom #tiny-box-left p, #main-content .small-box .box-wrapper .h-subdivider-bottom #tiny-box-left p {
     position: absolute;
     bottom: 0;
@@ -127,18 +128,22 @@
         height: 48%;
         margin-bottom: 20px;
         background-color: #f79840; }
-        #main-content .big-box .box-wrapper .h-subdivider-top h5, #main-content .big-box .box-wrapper .h-subdivider-bottom h5, #main-content .short-box .box-wrapper .h-subdivider-top h5, #main-content .short-box .box-wrapper .h-subdivider-bottom h5, #main-content .small-box .box-wrapper .h-subdivider-top h5, #main-content .small-box .box-wrapper .h-subdivider-bottom h5 {
-          right: 1em; }
-        #main-content .big-box .box-wrapper .h-subdivider-top p, #main-content .big-box .box-wrapper .h-subdivider-bottom p, #main-content .short-box .box-wrapper .h-subdivider-top p, #main-content .short-box .box-wrapper .h-subdivider-bottom p, #main-content .small-box .box-wrapper .h-subdivider-top p, #main-content .small-box .box-wrapper .h-subdivider-bottom p {
+        #main-content .big-box .box-wrapper .h-subdivider-top .md-txt-wrapper, #main-content .big-box .box-wrapper .h-subdivider-bottom .md-txt-wrapper, #main-content .short-box .box-wrapper .h-subdivider-top .md-txt-wrapper, #main-content .short-box .box-wrapper .h-subdivider-bottom .md-txt-wrapper, #main-content .small-box .box-wrapper .h-subdivider-top .md-txt-wrapper, #main-content .small-box .box-wrapper .h-subdivider-bottom .md-txt-wrapper {
+          position: absolute;
           right: 0;
-          bottom: 0;
-          font-size: 14px; }
+          width: 50%; }
+          #main-content .big-box .box-wrapper .h-subdivider-top .md-txt-wrapper h5, #main-content .big-box .box-wrapper .h-subdivider-bottom .md-txt-wrapper h5, #main-content .short-box .box-wrapper .h-subdivider-top .md-txt-wrapper h5, #main-content .short-box .box-wrapper .h-subdivider-bottom .md-txt-wrapper h5, #main-content .small-box .box-wrapper .h-subdivider-top .md-txt-wrapper h5, #main-content .small-box .box-wrapper .h-subdivider-bottom .md-txt-wrapper h5 {
+            right: 1em; }
+          #main-content .big-box .box-wrapper .h-subdivider-top .md-txt-wrapper p, #main-content .big-box .box-wrapper .h-subdivider-bottom .md-txt-wrapper p, #main-content .short-box .box-wrapper .h-subdivider-top .md-txt-wrapper p, #main-content .short-box .box-wrapper .h-subdivider-bottom .md-txt-wrapper p, #main-content .small-box .box-wrapper .h-subdivider-top .md-txt-wrapper p, #main-content .small-box .box-wrapper .h-subdivider-bottom .md-txt-wrapper p {
+            right: 0;
+            bottom: 0;
+            font-size: 14px; }
         #main-content .big-box .box-wrapper .h-subdivider-top .sm-img-wrapper, #main-content .big-box .box-wrapper .h-subdivider-bottom .sm-img-wrapper, #main-content .short-box .box-wrapper .h-subdivider-top .sm-img-wrapper, #main-content .short-box .box-wrapper .h-subdivider-bottom .sm-img-wrapper, #main-content .small-box .box-wrapper .h-subdivider-top .sm-img-wrapper, #main-content .small-box .box-wrapper .h-subdivider-bottom .sm-img-wrapper {
           width: 45%;
           height: 100%; }
       #main-content .big-box .box-wrapper .h-subdivider-bottom, #main-content .short-box .box-wrapper .h-subdivider-bottom, #main-content .small-box .box-wrapper .h-subdivider-bottom {
         bottom: 0;
-        top: 6.4em;
+        top: 11.4em;
         margin-top: 20px; }
         #main-content .big-box .box-wrapper .h-subdivider-bottom #tiny-box-right, #main-content .short-box .box-wrapper .h-subdivider-bottom #tiny-box-right, #main-content .small-box .box-wrapper .h-subdivider-bottom #tiny-box-right {
           right: 0;
