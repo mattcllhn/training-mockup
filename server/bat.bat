@@ -1,1 +1,2 @@
-npm run watch-css
+start cmd.exe
+cmd /c npm run watch-css
