@@ -4,33 +4,64 @@
 			font-weight:bold;
 			font-size: 25px;
 			position:absolute;
-			left:.25em;
+	
 			top:.5em;
-			color:yellow;
-
+			color:white;
 
 
 		}//.boxH5
+.tiny-box{
+	position: absolute;
+    background-color: green;
+    height: 100%;
+    width: 44%;
+    overflow:hidden;
+
+    h6{
+    	position:absolute;
+    	bottom:0;
+    	left:0;
+    	right:0;
+    	top:6em;
+    	margin:0;
+    	padding-top:1em;
+    	font-size:12px;
+    }
+    p{
+    	position:absolute;
+    	bottom:0;
+    	margin-bottom:0;
+    	font-size:10px;
+    }
+    img{
+    	height:auto;
+    	width:100%;
+
+    }
+}//tiny-box
+
 
 #main-content{
 	height:1000px;
 
 	.big-box, .short-box, .small-box {
-		height:500px;
+		height:350px;
 		position:relative;
 		border:1px solid black;
+		background-color:white;
 		.box-wrapper{
 			position:absolute;
 			top:10px;
 			bottom:10px;
-			right:10px;
-			left:10px;
+			right:0px;
+			left:0px;
 			background-color:$lightGray;
 			border:1px solid black;
+
 			.img-wrapper{
 					position:relative;
 					width:100%;
-					height:50%;
+					height:60%;
 					overflow:hidden;
 
 					img{
@@ -43,8 +74,58 @@
 					right:0;
 					bottom:0;
 					left:0;
-					height:50%
+					height:40%
 				}//big-text-wrapper
+			.h-subdivider-top{
+				position:absolute;
+				top:0;
+				left:0;
+				width:100%;
+				height:48%;
+				margin-bottom:20px;
+				background-color:$orange;
+				@extend .boxH5;
+
+				h5{
+					right:1em;
+				}//h5
+				h6{
+
+				}//h6
+				p{
+					right:0;
+					bottom:0;
+					font-size:14px;
+				}//p
+				.sm-img-wrapper{
+					@extend .img-wrapper;
+					width:45%;
+					height:100%
+				}
+			}//h-subdivider-top
+			.h-subdivider-bottom{
+				@extend .h-subdivider-top;
+				bottom: 0;
+    			top: 6.4em;
+    			margin-top: 20px;
+    			#tiny-box-right{
+    				@extend .tiny-box;
+    				right:0;
+    				margin-left:10px;
+    				h6{
+    					background-color:$blue;
+    				}
+	    			}
+     			#tiny-box-left{
+    				@extend .tiny-box;
+    				left:0;
+    				background-color:$blue;
+    				margin-right:10px;
+    				h6{
+    					background-color:$darkGray;
+    				}
+    			}
+			}
 		.box-h-divider{
 			position:relative;
 			width:100%;
@@ -53,6 +134,7 @@
 			background-color:lightblue;
 			h5{
 				@extend .boxH5;
+				left:.25em;
 				top:2em;
 				font-size:33px;
 			}//h5
@@ -64,6 +146,7 @@
 
 		h5{
 				@extend .boxH5;
+				left:.25em;
 			}//h5
 		h6{
 			color:yellow;
