@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server/app.js",
+    "prestart":"start cmd.exe",
+    "gat":"cd server && start bat.bat",
+    "start": "npm run gat & nodemon server/app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --public/ scss scss/main.scss   public/css/style.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
