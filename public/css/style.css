@@ -208,11 +208,13 @@
   #main-content .box2 {
     margin-top: 30px; }
   #main-content .orange-lists {
-    background-color: #f79840;
+    background-color: white;
     color: white; }
     #main-content .orange-lists h5 {
       background-color: #f79840;
       color: white; }
+    #main-content .orange-lists .orange-color-giver {
+      background-color: #f79840; }
   #main-content .dropdown-content {
     display: none; }
 
@@ -263,6 +265,19 @@
       display: none; }
     #main-content .dropdown-box .dropdown-content {
       display: block; }
+      #main-content .dropdown-box .dropdown-content .event-lists {
+        padding-left: 4px; }
+        #main-content .dropdown-box .dropdown-content .event-lists li {
+          list-style: none;
+          color: black; }
+        #main-content .dropdown-box .dropdown-content .event-lists .dropdown-image-wrapper {
+          height: 30px;
+          width: 50px;
+          float: left;
+          overflow: hidden; }
+          #main-content .dropdown-box .dropdown-content .event-lists .dropdown-image-wrapper img {
+            height: 100%;
+            width: auto; }
   #main-content .orange-lists {
     height: 100%; } }
 

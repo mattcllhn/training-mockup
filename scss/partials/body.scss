@@ -230,12 +230,18 @@
 			margin-top:30px;
 		}//.box2
 		.orange-lists{
-			background-color:$orange;
+
+			background-color:white;
 			color:white;
 			h5{
 				background-color:$orange;
 				color:white
-			}
+				}//h5
+			.orange-color-giver{
+			background-color:$orange;
+
+			}//.orange-color-giver
+			
 			}//.orange-lists
 			.dropdown-content{
 			display:none;
@@ -367,6 +373,24 @@
 
 			.dropdown-content{
 				display:block;
+				.event-lists{
+					padding-left:4px;
+					li{
+						list-style: none;
+						color:black;
+					}
+					.dropdown-image-wrapper{
+						height:30px;
+						width:50px;
+						float:left;
+						overflow:hidden;
+						img{
+							height:100%;
+							width:auto;
+						}
+
+					}
+				}
 			}//.dropdown-content
 			}//.dropdown-box
 			.orange-lists{
