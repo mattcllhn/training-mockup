@@ -85,7 +85,9 @@
 				height:50%;
 				padding-bottom:15px;
 				// background-color:$orange;
-				    .md-txt-wrapper{
+				   
+				}//.h-subdivider-top
+			.md-txt-wrapper{
 				   		background-color:$orange;
 				   		position: absolute;
     					right: 0;
@@ -105,12 +107,11 @@
 					bottom:0;
 					font-size:10px;
 				}//p
-			}
-				.sm-img-wrapper{
+			}//.md-txt-wrapper
+			.sm-img-wrapper{
 					@extend .img-wrapper;
 					width:45%;
 					height:100%
-				}
 			}//h-subdivider-top
 			.h-subdivider-bottom{
 				position:absolute;
@@ -121,6 +122,35 @@
 				bottom: 0;
     			top: 11.4em;
     			padding-top: 15px;
+
+    						.md-txt-wrapper{
+				   		background-color:$orange;
+				   		position: absolute;
+				   		top:1em;
+    					right: 0;
+    					bottom:0;
+   						width: 55%;
+   						height:90.911%;
+				@extend .boxH5;
+
+				h5{
+					right:1em;
+				}//h5
+				h6{
+
+				}//h6
+				p{
+					right:0;
+					bottom:0;
+					font-size:10px;
+				}//p
+			}//.md-txt-wrapper
+			.sm-img-wrapper{
+					@extend .img-wrapper;
+					width:45%;
+					height:100%
+			}//sm-img-wrapper
+
     			#tiny-box-right{
     				@extend .tiny-box;
     				right:0;
@@ -128,9 +158,9 @@
     				h6{
     					background-color:$blue;
     					margin: 0 0 0 15px;
-    				}
+    				}//h6
 
-	    			}
+	    			}//#tiny-box-right
      			#tiny-box-left{
     				@extend .tiny-box;
     				left:0;
@@ -139,12 +169,12 @@
     				h6{
     					background-color:$darkGray;
     					margin:0 15px 0 0;
-    				}
+    				}//h6
     				#tiny-box-lf-p{
     					margin-right:11px;
-    				}
-    			}
-			}
+    				}//#tiny-box-lf-p
+    			}//#tiny-box-left
+			}//h-subdivider-bottom
 		.box-h-divider{
 			position:relative;
 			width:100%;
@@ -251,7 +281,7 @@
 
 
 // ------------------------custom breakpoints----------------------------//
-@media (min-width: 420px) and (max-width:768px) { 
+@media (min-width: 425px) and (max-width:768px) { 
 	#main-content{
 	.big-box{
 		.box-wrapper{
@@ -261,7 +291,7 @@
 					height:auto;
 				}//img
 			}//img-wrapper
-			.h-subdivider-top{
+			.h-subdivider-top .h-subdivider-bottom{
 				.sm-img-wrapper{
 				img{
 					width:100%;
