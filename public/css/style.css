@@ -269,12 +269,31 @@
         padding-left: 4px; }
         #main-content .dropdown-box .dropdown-content .event-lists li {
           list-style: none;
-          color: black; }
-        #main-content .dropdown-box .dropdown-content .event-lists .dropdown-image-wrapper {
-          height: 30px;
-          width: 50px;
+          color: black;
+          height: 100%;
           float: left;
-          overflow: hidden; }
+          clear: both; }
+          #main-content .dropdown-box .dropdown-content .event-lists li p {
+            float: left; }
+          #main-content .dropdown-box .dropdown-content .event-lists li .dropdown-txt-wrapper {
+            float: left;
+            width: 70%;
+            height: 100%; }
+            #main-content .dropdown-box .dropdown-content .event-lists li .dropdown-txt-wrapper .title {
+              font-size: 19px;
+              margin: 15px 0 5px 0; }
+            #main-content .dropdown-box .dropdown-content .event-lists li .dropdown-txt-wrapper .info {
+              font-size: 17px;
+              margin: 3px 42% 3px 3px; }
+            #main-content .dropdown-box .dropdown-content .event-lists li .dropdown-txt-wrapper .city {
+              font-size: 17px; }
+        #main-content .dropdown-box .dropdown-content .event-lists .dropdown-image-wrapper {
+          margin: 15px 0;
+          height: 60px;
+          width: 30%;
+          float: left;
+          overflow: hidden;
+          clear: both; }
           #main-content .dropdown-box .dropdown-content .event-lists .dropdown-image-wrapper img {
             height: 100%;
             width: auto; }

@@ -373,24 +373,53 @@
 
 			.dropdown-content{
 				display:block;
+				
 				.event-lists{
 					padding-left:4px;
+
 					li{
 						list-style: none;
 						color:black;
-					}
+						height:100%;
+						float:left;
+						clear:both;
+
+						p{
+							float:left;
+
+						}//p
+
+						.dropdown-txt-wrapper{
+							float:left;
+							width:70%;
+							height:100%;
+							.title{
+								font-size:19px;
+								margin:15px 0 5px 0;
+							}//.title
+							.info{
+								font-size:17px;
+								margin:3px 42% 3px 3px;
+							}//.info
+							.city{
+								font-size:17px;
+							}
+						}//.dropdown-text-wrapper
+					}//li
 					.dropdown-image-wrapper{
-						height:30px;
-						width:50px;
+						margin:15px 0;
+						height:60px;
+						width:30%;
 						float:left;
 						overflow:hidden;
+						clear:both;
 						img{
 							height:100%;
 							width:auto;
-						}
+						}//img
 
-					}
-				}
+					}//.dropdown-image-wrapper
+				}//.event-lists
 			}//.dropdown-content
 			}//.dropdown-box
 			.orange-lists{
