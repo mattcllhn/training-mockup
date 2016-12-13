@@ -136,6 +136,8 @@
           right: 0;
           bottom: 0;
           font-size: 10px; }
+      #main-content .big-box .box-wrapper #top-box, #main-content .short-box .box-wrapper #top-box, #main-content .small-box .box-wrapper #top-box {
+        background-color: #475570; }
       #main-content .big-box .box-wrapper .sm-img-wrapper, #main-content .short-box .box-wrapper .sm-img-wrapper, #main-content .small-box .box-wrapper .sm-img-wrapper {
         width: 45%;
         height: 100%; }
@@ -162,6 +164,8 @@
             right: 0;
             bottom: 0;
             font-size: 10px; }
+        #main-content .big-box .box-wrapper .h-subdivider-bottom #bottom-box, #main-content .short-box .box-wrapper .h-subdivider-bottom #bottom-box, #main-content .small-box .box-wrapper .h-subdivider-bottom #bottom-box {
+          background-color: #494949; }
         #main-content .big-box .box-wrapper .h-subdivider-bottom .sm-img-wrapper, #main-content .short-box .box-wrapper .h-subdivider-bottom .sm-img-wrapper, #main-content .small-box .box-wrapper .h-subdivider-bottom .sm-img-wrapper {
           width: 45%;
           height: 100%; }
@@ -201,6 +205,14 @@
       width: 98.7%;
       background-color: #bcbcbc;
       padding: 15px 0; }
+  #main-content .box2 {
+    margin-top: 30px; }
+  #main-content .orange-lists {
+    background-color: #f79840;
+    color: white; }
+    #main-content .orange-lists h5 {
+      background-color: #f79840;
+      color: white; }
   #main-content .dropdown-content {
     display: none; }
 
@@ -235,6 +247,8 @@
     margin-top: 30px; }
   #main-content .dropdown-box {
     height: 145.5px; }
+    #main-content .dropdown-box h5 {
+      padding-left: 1em; }
     #main-content .dropdown-box ul li {
       list-style: square;
       font-size: 20px;
@@ -248,7 +262,9 @@
     #main-content .dropdown-box .glyphicon-play {
       display: none; }
     #main-content .dropdown-box .dropdown-content {
-      display: block; } }
+      display: block; }
+  #main-content .orange-lists {
+    height: 100%; } }
 
 /*footer.scss*/
 #footer-row {
