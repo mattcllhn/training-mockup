@@ -59,7 +59,7 @@
           color: #000; }
 
 /*body.scss*/
-.boxH5, #main-content .big-box .box-wrapper .md-txt-wrapper, #main-content .short-box .box-wrapper .md-txt-wrapper, #main-content .small-box .box-wrapper .md-txt-wrapper, #main-content .big-box .box-wrapper .h-subdivider-bottom .md-txt-wrapper, #main-content .short-box .box-wrapper .h-subdivider-bottom .md-txt-wrapper, #main-content .small-box .box-wrapper .h-subdivider-bottom .md-txt-wrapper, #main-content .big-box .box-wrapper .box-h-divider h5, #main-content .short-box .box-wrapper .box-h-divider h5, #main-content .small-box .box-wrapper .box-h-divider h5, #main-content .big-box h5, #main-content .short-box h5, #main-content .small-box h5 {
+.boxH5, #main-content .big-box .box-wrapper .md-txt-wrapper, #main-content .short-box .box-wrapper .md-txt-wrapper, #main-content .small-box .box-wrapper .md-txt-wrapper, #main-content .big-box .box-wrapper .h-subdivider-bottom .md-txt-wrapper, #main-content .short-box .box-wrapper .h-subdivider-bottom .md-txt-wrapper, #main-content .small-box .box-wrapper .h-subdivider-bottom .md-txt-wrapper, #main-content .big-box h5, #main-content .short-box h5, #main-content .small-box h5 {
   font-weight: bold;
   font-size: 15px;
   position: absolute;
@@ -101,8 +101,7 @@
       top: 15px;
       bottom: 15px;
       right: 0px;
-      left: 0px;
-      background-color: #bcbcbc; }
+      left: 0px; }
       #main-content .big-box .box-wrapper .img-wrapper, #main-content .big-box .box-wrapper .sm-img-wrapper, #main-content .big-box .box-wrapper .h-subdivider-bottom .sm-img-wrapper, #main-content .short-box .box-wrapper .img-wrapper, #main-content .short-box .box-wrapper .sm-img-wrapper, #main-content .short-box .box-wrapper .h-subdivider-bottom .sm-img-wrapper, #main-content .small-box .box-wrapper .img-wrapper, #main-content .small-box .box-wrapper .sm-img-wrapper, #main-content .small-box .box-wrapper .h-subdivider-bottom .sm-img-wrapper {
         position: relative;
         width: 100%;
@@ -180,17 +179,6 @@
             margin: 0 15px 0 0; }
           #main-content .big-box .box-wrapper .h-subdivider-bottom #tiny-box-left #tiny-box-lf-p, #main-content .short-box .box-wrapper .h-subdivider-bottom #tiny-box-left #tiny-box-lf-p, #main-content .small-box .box-wrapper .h-subdivider-bottom #tiny-box-left #tiny-box-lf-p {
             margin-right: 11px; }
-      #main-content .big-box .box-wrapper .box-h-divider, #main-content .short-box .box-wrapper .box-h-divider, #main-content .small-box .box-wrapper .box-h-divider {
-        position: relative;
-        width: 100%;
-        height: 50%;
-        background-color: lightblue; }
-        #main-content .big-box .box-wrapper .box-h-divider h5, #main-content .short-box .box-wrapper .box-h-divider h5, #main-content .small-box .box-wrapper .box-h-divider h5 {
-          left: .25em;
-          top: 2em;
-          font-size: 33px; }
-      #main-content .big-box .box-wrapper .dropdown-content, #main-content .short-box .box-wrapper .dropdown-content, #main-content .small-box .box-wrapper .dropdown-content {
-        display: none; }
     #main-content .big-box h5, #main-content .short-box h5, #main-content .small-box h5 {
       left: .25em; }
     #main-content .big-box h6, #main-content .short-box h6, #main-content .small-box h6 {
@@ -203,6 +191,18 @@
       color: yellow;
       bottom: 0;
       right: 1em; }
+  #main-content .dropdown-box {
+    width: 100%;
+    margin: 15px 0;
+    background-color: #bcbcbc; }
+    #main-content .dropdown-box h5 {
+      font-weight: bold;
+      margin: .25em;
+      width: 98.7%;
+      background-color: #bcbcbc;
+      padding: 15px 0; }
+  #main-content .dropdown-content {
+    display: none; }
 
 @media (min-width: 768px) and (max-width: 991px) {
   #main-content .big-box h5 {
@@ -229,6 +229,26 @@
   #main-content .big-box .box-wrapper .h-subdivider-top .h-subdivider-bottom .sm-img-wrapper img {
     width: 100%;
     height: auto; } }
+
+@media (min-width: 768px) {
+  #main-content .box2 {
+    margin-top: 30px; }
+  #main-content .dropdown-box {
+    height: 145.5px; }
+    #main-content .dropdown-box ul li {
+      list-style: square;
+      font-size: 20px;
+      line-height: 16px; }
+      #main-content .dropdown-box ul li .li-text {
+        font-size: 13px;
+        text-decoration: underline; }
+    #main-content .dropdown-box p {
+      float: right;
+      padding-right: 5px; }
+    #main-content .dropdown-box .glyphicon-play {
+      display: none; }
+    #main-content .dropdown-box .dropdown-content {
+      display: block; } }
 
 /*footer.scss*/
 #footer-row {

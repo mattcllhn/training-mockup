@@ -56,7 +56,7 @@
 			bottom:15px;
 			right:0px;
 			left:0px;
-			background-color:$lightGray;
+			// background-color:$lightGray;
 			// border:1px solid black;
 
 			.img-wrapper{
@@ -175,23 +175,7 @@
     				}//#tiny-box-lf-p
     			}//#tiny-box-left
 			}//h-subdivider-bottom
-		.box-h-divider{
-			position:relative;
-			width:100%;
-			// border:1px solid black;
 
-			height:50%;
-			background-color:lightblue;
-			h5{
-				@extend .boxH5;
-				left:.25em;
-				top:2em;
-				font-size:33px;
-			}//h5
-		}//box-h-divider
-			.dropdown-content{
-			display:none;
-	}//dropdown-content
 	}//box-wrapper
 
 		h5{
@@ -214,6 +198,28 @@
 			}//p
 		}//.big box
 
+
+		.dropdown-box{
+			width:100%;
+			margin:15px 0;
+			background-color:$lightGray;
+			h5{
+   				font-weight:bold;
+  				margin: .25em;
+   				width: 98.7%;
+   				background-color:$lightGray;
+   				padding:15px 0;
+
+
+				.glyphicon-play{
+					// font-size:20px;
+				}
+			}//h5
+		}//dropdown-box
+			.dropdown-content{
+			display:none;
+	}//dropdown-content
+
 	}//#main-content
 
 
@@ -225,14 +231,13 @@
 // ------------------------bootstrap breakpoints----------------------------//
 @media (min-width: 768px) and (max-width: 991px) { 
 		#main-content{
-	.big-box{
-		h5{
-			color:green;
+			.big-box{
+				h5{
+					color:green;
 
-		}//h5
-	}//.big-box
-}//main-content
-
+				}//h5
+			}//.big-box
+		}//main-content
 
 	}//col-sm
 
@@ -281,6 +286,7 @@
 
 
 // ------------------------custom breakpoints----------------------------//
+//resizing images
 @media (min-width: 425px) and (max-width:768px) { 
 	#main-content{
 	.big-box{
@@ -304,4 +310,41 @@
 
 	}//col-lg
 }//media
+
+//showing and hiding list items
+@media(min-width: 768px){
+		#main-content{
+
+			.box2{
+				margin-top:30px;
+			}//.box2
+			.dropdown-box{
+				height:145.5px;
+				ul{
+					li{
+						list-style: square;
+						font-size:20px;
+						line-height: 16px;
+
+						.li-text{
+							font-size:13px;
+							text-decoration: underline;
+						}//li-texts
+					}//li
+				}//ul
+					p{
+						float:right;
+						padding-right:5px;
+					}//p
+				.glyphicon-play{
+					display:none
+				}//.glyphicon-play
+
+			.dropdown-content{
+				display:block;
+			}//.dropdown-content
+
+			}//.dropdown-box
+}//main-content
+	}//media
 // ------------------------custom breakpoints----------------------------//
