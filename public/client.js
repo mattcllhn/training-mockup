@@ -7,6 +7,7 @@ $(document).ready(function(){
 
 var myApp = angular.module('myApp',[]);
 
-myApp.controller('testController',[function(){
+myApp.controller('testController',['$scope',function($scope){
 	console.log('NG');
+	
 }]);

@@ -1,62 +1,28 @@
 /*header.scss*/
-.header {
-  margin-top: 0; }
-  .header h1 {
-    font-weight: bold; }
-  .header #searchBox {
-    padding-top: .5em;
-    padding-right: 0;
-    margin-right: 0; }
-    .header #searchBox #search-wrapper {
-      position: absolute;
-      right: 0; }
-      .header #searchBox #search-wrapper button {
-        border-color: #494949;
-        background-color: #494949;
-        color: white; }
-        .header #searchBox #search-wrapper button:active {
-          border-color: #494949;
-          border-image: none; }
-        .header #searchBox #search-wrapper button:visited {
-          border-color: #494949; }
-        .header #searchBox #search-wrapper button:focus {
-          border-color: #494949;
-          outline: none; }
-  .header .nav-glyph {
-    background-color: #f79840;
-    height: 7em;
-    margin: 1em .5em;
-    padding-top: 3em;
-    width: 9em;
-    font-size: .5em;
-    list-style: none; }
-    .header .nav-glyph .topTiles {
-      color: white;
-      font-size: 27px;
-      position: absolute;
-      top: 15%;
-      left: 26%; }
-    .header .nav-glyph a {
-      color: #fff;
-      margin-left: -1.5em;
-      position: absolute;
-      bottom: 1%; }
-  .header .header-border {
-    height: 34px;
-    background-color: #f2f2f7; }
-    .header .header-border .btn {
-      border-radius: 0; }
-      .header .header-border .btn:focus {
-        outline: 5px auto #bcbcbc;
-        border-radius: 0; }
-    .header .header-border .navbar-nav {
-      width: 100%; }
-      .header .header-border .navbar-nav ul li {
-        margin-top: 7px;
-        list-style: none; }
-        .header .header-border .navbar-nav ul li a {
-          text-decoration: none;
-          color: #000; }
+h1 {
+  font-weight: bold; }
+
+.btn-wrapper {
+  position: absolute;
+  right: 0;
+  top: 20px; }
+  .btn-wrapper .btn {
+    background-color: #0a1caa;
+    color: white;
+    border-color: #0a1caa;
+    border-radius: 0; }
+    .btn-wrapper .btn:active {
+      border-color: black;
+      border-image: none; }
+    .btn-wrapper .btn:visited {
+      border-color: #0a1caa; }
+    .btn-wrapper .btn:focus {
+      border-color: #0a1caa;
+      outline: none; }
+
+#header-border-wrapper {
+  height: 3px;
+  background-color: #f79840; }
 
 /*body.scss*/
 .boxH5, #main-content .big-box .box-wrapper .md-txt-wrapper, #main-content .short-box .box-wrapper .md-txt-wrapper, #main-content .small-box .box-wrapper .md-txt-wrapper, #main-content .big-box .box-wrapper .h-subdivider-bottom .md-txt-wrapper, #main-content .short-box .box-wrapper .h-subdivider-bottom .md-txt-wrapper, #main-content .small-box .box-wrapper .h-subdivider-bottom .md-txt-wrapper, #main-content .big-box h5, #main-content .short-box h5, #main-content .small-box h5 {

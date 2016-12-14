@@ -1,101 +1,169 @@
 /*header.scss*/
+h1{
+	font-weight:bold;
+	}//h1
 
-.header{
-		margin-top:0;
-	h1{
-		font-weight:bold;
-	}
+	.btn-wrapper{
+		position:absolute;
+		right:0;
+		top:20px;
+		.btn{
+			background-color:$blue;
+			color:white;
+			border-color:$blue;
+			border-radius:0;
 
-	#searchBox{
-		padding-top:.5em;
-		padding-right:0;
-		margin-right:0;
+			&:active{
+				border-color:black;
+				border-image:none;
+  		    }//&:active
+  		    &:visited{
+  		    	border-color:$blue;
+  		    }//&:visited
+  		    &:focus{
+  		    	border-color:$blue;
+  		    	outline: none;
+  		    }//&:focus
+		}//.btn
+	}//.btn-wrapper
 
-		#search-wrapper{
-			position: absolute;
-  		    right: 0;
-
-  		    button{
-  		    	border-color:$darkGray;
-  		    	background-color:$darkGray;
-  		    	color:white;
-  		    	&:active{
-  		    		border-color:$darkGray;
-  		    		border-image:none;
-  		    	}
-
-  		    	&:visited{
-  		    		border-color:$darkGray;
-  		    	}
-  		    	&:focus{
-  		    		border-color:$darkGray;
-  		    		outline: none;
-  		    	}
-
-  		    }
-		}
-
-	}
-
-	.nav-glyph{
+#header-border-wrapper{
+		height: 3px;
 		background-color: $orange;
-		height:7em;
-		margin:1em .5em;
-		padding-top:3em;
-		width: 9em;
-		font-size: .5em;
-		list-style:none;
-
-			.topTiles{
-				color:white;
-				font-size: 27px;
-    			position: absolute;
-   			 	top: 15%;
-   			 	left:26%;	
-
-   			 }
-
-			a{
-
-				color:#fff;
-				margin-left:-1.5em;
-				position:absolute;
-				bottom:1%;
-
-			}
-		
-	}
-	.header-border{
-		height:34px;
-		background-color:$lightestGray;
-
-			   			.btn {
-	   					border-radius:0;
-			
-					    	&:focus{
-					    		outline: 5px auto $lightGray;
-					    		border-radius:0;
-					    	}
-					    }
-			.navbar-nav{
-		    width: 100%;
+}//.header-border-wrapper
 
 
 
-		    	ul{
-					li{
-						margin-top:7px;
-						list-style: none;
-							a{
-								text-decoration: none;
-								color:#000;
-			}
-		}
-	}
-
-	
-	}
 
 
-	}
-}
+
+
+
+
+
+
+
+
+
+
+	@media (min-width: 768px) and (max-width: 991px) { 
+
+
+
+
+	}//col-sm
+	@media (min-width: 992px) and (max-width: 1199px) { 
+
+
+
+	}//col-md
+	@media (min-width: 1200px) { 
+
+
+	}//col-lg
+
+
+
+
+
+
+
+// 	.header{
+// 		margin-top:0;
+// 	h1{
+// 		font-weight:bold;
+// 	}
+
+// 	#searchBox{
+// 		padding-top:.5em;
+// 		padding-right:0;
+// 		margin-right:0;
+
+// 		#search-wrapper{
+// 			position: absolute;
+//   		    right: 0;
+
+ //  		    button{
+ //  		    	border-color:$darkGray;
+ //  		    	background-color:$darkGray;
+ //  		    	color:white;
+ //  		    	&:active{
+ //  		    		border-color:$darkGray;
+ //  		    		border-image:none;
+ //  		    	}
+
+ //  		    	&:visited{
+ //  		    		border-color:$darkGray;
+ //  		    	}
+ //  		    	&:focus{
+ //  		    		border-color:$darkGray;
+ //  		    		outline: none;
+ //  		    	}
+
+ //  		    }
+	// 	}
+
+	// }
+
+// 	.nav-glyph{
+// 		background-color: $orange;
+// 		height:7em;
+// 		margin:1em .5em;
+// 		padding-top:3em;
+// 		width: 9em;
+// 		font-size: .5em;
+// 		list-style:none;
+
+// 			.topTiles{
+// 				color:white;
+// 				font-size: 27px;
+//     			position: absolute;
+//    			 	top: 15%;
+//    			 	left:26%;	
+
+//    			 }
+
+// 			a{
+
+// 				color:#fff;
+// 				margin-left:-1.5em;
+// 				position:absolute;
+// 				bottom:1%;
+
+// 			}
+
+// 	}
+// 	.header-border{
+// 		height:34px;
+// 		background-color:$lightestGray;
+
+// 			   			.btn {
+// 	   					border-radius:0;
+
+// 					    	&:focus{
+// 					    		outline: 5px auto $lightGray;
+// 					    		border-radius:0;
+// 					    	}
+// 					    }
+// 			.navbar-nav{
+// 		    width: 100%;
+
+
+
+// 		    	ul{
+// 					li{
+// 						margin-top:7px;
+// 						list-style: none;
+// 							a{
+// 								text-decoration: none;
+// 								color:#000;
+// 			}
+// 		}
+// 	}
+
+
+// 	}
+
+
+// 	}
+// }
