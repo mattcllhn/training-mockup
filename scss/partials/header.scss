@@ -1,6 +1,6 @@
 /*header.scss*/
 h1{
-	font-weight:bold;
+	margin: 20px 0 20px -15px;
 	}//h1
 
 	.btn-wrapper{
@@ -12,6 +12,10 @@ h1{
 			color:white;
 			border-color:$blue;
 			border-radius:0;
+			font-size: 21px;
+			height:40px;
+			width:40px;
+
 
 			&:active{
 				border-color:black;
@@ -24,13 +28,22 @@ h1{
   		    	border-color:$blue;
   		    	outline: none;
   		    }//&:focus
+  		    span {
+  		    	margin:-3px;
+  		    }//span
 		}//.btn
 	}//.btn-wrapper
 
-#header-border-wrapper{
+	#header-border-wrapper{
 		height: 3px;
 		background-color: $orange;
-}//.header-border-wrapper
+
+		.border-nav{
+			display:none;
+		}
+
+
+	}//.header-border-wrapper
 
 
 
@@ -48,18 +61,52 @@ h1{
 
 	@media (min-width: 768px) and (max-width: 991px) { 
 
+		h1{
+			color:indigo;
+		}
+
+		#header-border-wrapper{
+			height: 20px;
+			background-color: $lightGray;
+
+			.border-nav{
+				display:inline-block;
+				float:left;
+				width:100%;
+
+			ul{
+					list-style:none;
+					padding-left:0;
+					:last-child{
+						margin-right:0;
+					}//::last-child
+			}//ul
+			li{
+				text-decoration: none;
+				display:inline-block;
+				margin-right:12%;
+			}//li
+			button{
+				display:none;
+			}//button
+		}//.border-nav
 
 
+	}//.header-border-wrapper
 
 	}//col-sm
 	@media (min-width: 992px) and (max-width: 1199px) { 
 
-
+		h1{
+			color:green;
+		}
 
 	}//col-md
 	@media (min-width: 1200px) { 
 
-
+		h1{
+			color:orange;
+		}
 	}//col-lg
 
 
