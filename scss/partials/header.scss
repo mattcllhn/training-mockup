@@ -1,19 +1,19 @@
 /*header.scss*/
 @mixin header-border {
 	#header-border-wrapper{
-	height: 20px;
-	background-color: $lightGray;
+		height: 20px;
+		background-color: $lightGray;
 
-	.border-nav{
-		display:inline-block;
-		float:left;
-		width:100%;
+		.border-nav{
+			display:inline-block;
+			float:left;
+			width:100%;
 
-		ul{
-			list-style:none;
-			padding-left:0;
-			:nth-child(4){
-				margin-right:0;
+			ul{
+				list-style:none;
+				padding-left:0;
+				:nth-child(4){
+					margin-right:0;
 					}//:last-child
 					li{
 						text-decoration: none;
@@ -32,12 +32,13 @@
 			}//button
 		}//.border-nav
 	}//.header-border-wrapper
+
 	}//%placeholder
 // --------------------------------------------------mixins---------------------------------------//
 
 
-	h1{
-		margin: 20px 0 20px -15px;
+h1{
+	margin: 20px 0 20px -15px;
 	}//h1
 
 	.blue-btn-wrapper{
@@ -82,7 +83,9 @@
 
 	}//.header-border-wrapper
 
-
+	#search-wrapper, #orange-nav-wrapper{
+		display:none;
+	}
 
 
 
@@ -99,7 +102,7 @@
 	@media (min-width: 768px) and (max-width: 991px) { 
 
 
-			@include header-border;
+		@include header-border;
 
 	}//col-sm
 	@media (min-width: 992px) and (max-width: 1199px) { 
@@ -121,9 +124,9 @@
 
 
 		@include header-border;
-.blue-btn-wrapper{
-	display:none;
-}
+		.blue-btn-wrapper{
+			display:none;
+		}
 		#header-border-wrapper{
 			height:34px;
 			.border-nav{
@@ -135,28 +138,94 @@
 						margin-top:7px;
 						}//li
 
-					button{
-						border-radius:0;
-						display:inline;
-						border-color:$darkGray;
-						background-color:$darkGray;
-						color:white;
-						&:active{
+						button{
+							border-radius:0;
+							display:inline;
 							border-color:$darkGray;
-							border-image:none;
-						}
+							background-color:$darkGray;
+							color:white;
+							&:active{
+								border-color:$darkGray;
+								border-image:none;
+							}
 
-						&:visited{
-							border-color:$darkGray;
-						}
-						&:focus{
-							border-color:$darkGray;
-							outline: none;
-						}
+							&:visited{
+								border-color:$darkGray;
+							}
+							&:focus{
+								border-color:$darkGray;
+								outline: none;
+							}
 	  		    	}//button	
 	  			   }//ul				
 				}//.border-nav
 			}//#header-border-wrapper
+
+			#search-wrapper{
+				display:block;
+				height: 86px;
+				width: 33.333%;
+				float: left;
+				padding-top:15px;
+				input{
+					width:78%;
+				}
+				button{
+					width:22%;
+					border-color:$darkGray;
+					background-color:$darkGray;
+					color:white;
+					&:active{
+						border-color:$darkGray;
+						border-image:none;
+	  		    	}//:active
+	  		    	&:visited{
+	  		    		border-color:$darkGray;
+	  		    	}//:visited
+	  		    	&:focus{
+	  		    		border-color:$darkGray;
+	  		    		outline: none;
+	  		    	}//:focus
+
+  		    }//button			
+			}//#search-wrapper
+			#top-right{
+				padding-right:0;
+			}
+			#orange-nav-wrapper{
+				display:block;
+				width:66%;
+				float:right;
+				padding-top:15px;
+				nav{
+					float:right;
+					ul{
+						padding:0;
+						.nav-glyph{
+							background-color: $orange;
+							height:7em;
+							margin:0 .5em 0 .5em;
+							padding-top:3em;
+							width: 9em;
+							font-size: .5em;
+							list-style:none;
+							.topTiles{
+								color:white;
+								font-size: 27px;
+								position: absolute;
+								top: 15%;
+								left:26%;
+			   			 }//.topTiles
+			   			 a{
+			   			 	color:#fff;
+			   			 	margin-left:-1.5em;
+			   			 	position:absolute;
+			   			 	bottom:1%;
+						}//a
+				}//.nav-glyph
+				}//ul
+				}//nav
+			}//#orange-nav-wrapper
 	}//col-lg
 
 
@@ -174,9 +243,9 @@
 // 		padding-right:0;
 // 		margin-right:0;
 
-// 		#search-wrapper{
-// 			position: absolute;
-//   		    right: 0;
+	// 	#search-wrapper{
+	// 		position: absolute;
+ //  		    right: 0;
 
  //  		    button{
  //  		    	border-color:$darkGray;
@@ -200,34 +269,34 @@
 
 	// }
 
-// 	.nav-glyph{
-// 		background-color: $orange;
-// 		height:7em;
-// 		margin:1em .5em;
-// 		padding-top:3em;
-// 		width: 9em;
-// 		font-size: .5em;
-// 		list-style:none;
+	// .nav-glyph{
+	// 	background-color: $orange;
+	// 	height:7em;
+	// 	margin:1em .5em;
+	// 	padding-top:3em;
+	// 	width: 9em;
+	// 	font-size: .5em;
+	// 	list-style:none;
 
-// 			.topTiles{
-// 				color:white;
-// 				font-size: 27px;
-//     			position: absolute;
-//    			 	top: 15%;
-//    			 	left:26%;	
+	// 		.topTiles{
+	// 			color:white;
+	// 			font-size: 27px;
+ //    			position: absolute;
+ //   			 	top: 15%;
+ //   			 	left:26%;	
 
-//    			 }
+ //   			 }
 
-// 			a{
+	// 		a{
 
-// 				color:#fff;
-// 				margin-left:-1.5em;
-// 				position:absolute;
-// 				bottom:1%;
+	// 			color:#fff;
+	// 			margin-left:-1.5em;
+	// 			position:absolute;
+	// 			bottom:1%;
 
-// 			}
+	// 		}
 
-// 	}
+	// }
 // 	.header-border{
 // 		height:34px;
 // 		background-color:$lightestGray;

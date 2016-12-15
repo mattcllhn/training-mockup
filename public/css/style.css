@@ -31,6 +31,9 @@ h1 {
   #header-border-wrapper .border-nav {
     display: none; }
 
+#search-wrapper, #orange-nav-wrapper {
+  display: none; }
+
 @media (min-width: 768px) and (max-width: 991px) {
   #header-border-wrapper {
     height: 20px;
@@ -121,7 +124,58 @@ h1 {
         border-color: #494949; }
       #header-border-wrapper .border-nav ul button:focus {
         border-color: #494949;
-        outline: none; } }
+        outline: none; }
+  #search-wrapper {
+    display: block;
+    height: 86px;
+    width: 33.333%;
+    float: left;
+    padding-top: 15px; }
+    #search-wrapper input {
+      width: 78%; }
+    #search-wrapper button {
+      width: 22%;
+      border-color: #494949;
+      background-color: #494949;
+      color: white; }
+      #search-wrapper button:active {
+        border-color: #494949;
+        border-image: none; }
+      #search-wrapper button:visited {
+        border-color: #494949; }
+      #search-wrapper button:focus {
+        border-color: #494949;
+        outline: none; }
+  #top-right {
+    padding-right: 0; }
+  #orange-nav-wrapper {
+    display: block;
+    width: 66%;
+    float: right;
+    padding-top: 15px; }
+    #orange-nav-wrapper nav {
+      float: right; }
+      #orange-nav-wrapper nav ul {
+        padding: 0; }
+        #orange-nav-wrapper nav ul .nav-glyph {
+          background-color: #f79840;
+          height: 7em;
+          margin: 0 .5em 0 .5em;
+          padding-top: 3em;
+          width: 9em;
+          font-size: .5em;
+          list-style: none; }
+          #orange-nav-wrapper nav ul .nav-glyph .topTiles {
+            color: white;
+            font-size: 27px;
+            position: absolute;
+            top: 15%;
+            left: 26%; }
+          #orange-nav-wrapper nav ul .nav-glyph a {
+            color: #fff;
+            margin-left: -1.5em;
+            position: absolute;
+            bottom: 1%; } }
 
 /*body.scss*/
 .boxH5, #main-content .big-box .box-wrapper .md-txt-wrapper, #main-content .short-box .box-wrapper .md-txt-wrapper, #main-content .small-box .box-wrapper .md-txt-wrapper, #main-content .big-box .box-wrapper .h-subdivider-bottom .md-txt-wrapper, #main-content .short-box .box-wrapper .h-subdivider-bottom .md-txt-wrapper, #main-content .small-box .box-wrapper .h-subdivider-bottom .md-txt-wrapper, #main-content .big-box h5, #main-content .short-box h5, #main-content .small-box h5 {
