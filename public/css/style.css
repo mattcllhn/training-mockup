@@ -2,11 +2,11 @@
 h1 {
   margin: 20px 0 20px -15px; }
 
-.btn-wrapper {
+.blue-btn-wrapper {
   position: absolute;
   right: 0;
   top: 20px; }
-  .btn-wrapper .btn {
+  .blue-btn-wrapper .btn {
     background-color: #0a1caa;
     color: white;
     border-color: #0a1caa;
@@ -14,15 +14,15 @@ h1 {
     font-size: 21px;
     height: 40px;
     width: 40px; }
-    .btn-wrapper .btn:active {
+    .blue-btn-wrapper .btn:active {
       border-color: black;
       border-image: none; }
-    .btn-wrapper .btn:visited {
+    .blue-btn-wrapper .btn:visited {
       border-color: #0a1caa; }
-    .btn-wrapper .btn:focus {
+    .blue-btn-wrapper .btn:focus {
       border-color: #0a1caa;
       outline: none; }
-    .btn-wrapper .btn span {
+    .blue-btn-wrapper .btn span {
       margin: -3px; }
 
 #header-border-wrapper {
@@ -42,7 +42,7 @@ h1 {
       #header-border-wrapper .border-nav ul {
         list-style: none;
         padding-left: 0; }
-        #header-border-wrapper .border-nav ul :last-child {
+        #header-border-wrapper .border-nav ul :nth-child(4) {
           margin-right: 0; }
         #header-border-wrapper .border-nav ul li {
           text-decoration: none;
@@ -65,7 +65,7 @@ h1 {
       #header-border-wrapper .border-nav ul {
         list-style: none;
         padding-left: 0; }
-        #header-border-wrapper .border-nav ul :last-child {
+        #header-border-wrapper .border-nav ul :nth-child(4) {
           margin-right: 0; }
         #header-border-wrapper .border-nav ul li {
           text-decoration: none;
@@ -90,7 +90,7 @@ h1 {
       #header-border-wrapper .border-nav ul {
         list-style: none;
         padding-left: 0; }
-        #header-border-wrapper .border-nav ul :last-child {
+        #header-border-wrapper .border-nav ul :nth-child(4) {
           margin-right: 0; }
         #header-border-wrapper .border-nav ul li {
           text-decoration: none;
@@ -101,6 +101,8 @@ h1 {
             color: black; }
       #header-border-wrapper .border-nav button {
         display: none; }
+  .blue-btn-wrapper {
+    display: none; }
   #header-border-wrapper {
     height: 34px; }
     #header-border-wrapper .border-nav ul li {
