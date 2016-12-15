@@ -3,11 +3,12 @@ console.log('JS');
 $(document).ready(function(){
 	console.log('JQ');
 
-	$(document).watch(function(){
+if($(document).width()>= 1200){
+	$('#social-icons').insertBefore($('#footer-img-wrapper'));
+	$('#social-icon-wrapper').insertBefore($('#social-text-wrapper'));
+}//if
 
-	});//document.
-
-});
+});//document.width conditional
 
 var myApp = angular.module('myApp',[]);
 
