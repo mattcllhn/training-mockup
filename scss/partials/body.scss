@@ -193,7 +193,7 @@
 				left:.25em;
 			}//h5
 		h6{
-			color:yellow;
+			color:white;
 			position:absolute;
 			top:4em;
 			left:2em;
@@ -201,7 +201,7 @@
 			}//h6
 		p{
 			position:absolute;
-			color:yellow;
+			color:white;
 			bottom:0;
 			right:1em;
 
@@ -259,10 +259,7 @@
 @media (min-width: 768px) and (max-width: 991px) { 
 		#main-content{
 			.big-box{
-				h5{
-					color:green;
 
-				}//h5
 			}//.big-box
 		}//main-content
 
@@ -272,9 +269,7 @@
 
 	#main-content{
 	.big-box{
-		h5{
-			color:red;
-		}//h5
+
 		.box-wrapper{
 			.img-wrapper{
 				img{
@@ -298,9 +293,7 @@
 @media (min-width: 1200px) { 
 	#main-content{
 	.big-box{
-		h5{
-			color:blue;
-		}//h5
+
 	}//.big-box
 }//main-content
 
