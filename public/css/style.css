@@ -482,6 +482,7 @@ footer ul li {
     #social-icons ul #social-icon-wrapper li .goog {
       padding-top: 2px; } }
 
+/* main.scss*/
 #wrap-all-the-things {
   overflow-x: hidden; }
 
@@ -501,7 +502,25 @@ footer ul li {
   float: left;
   display: inline-block;
   position: absolute;
-  overflow: hidden; }
+  overflow: hidden;
+  color: white; }
+  .menu #onet {
+    margin: 0 100px 0 10px; }
+  .menu ul {
+    list-style: none;
+    padding-left: 0; }
+    .menu ul li {
+      padding: 5px 0; }
+      .menu ul li a {
+        color: white;
+        text-decoration: none; }
+      .menu ul li ul {
+        list-style: square;
+        color: white; }
+        .menu ul li ul li {
+          background-color: #3c3c3c;
+          border: none;
+          padding-left: 20px; }
 
 .menu-menu-open {
   width: 270px; }

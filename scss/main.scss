@@ -2,9 +2,9 @@
 @import "partials/header.scss";
 @import "partials/body.scss";
 @import "partials/footer.scss";
-body{
 
-}
+
+/* main.scss*/
 
 #wrap-all-the-things{
 	overflow-x:hidden;
@@ -26,8 +26,38 @@ body{
 	display:inline-block;
 	position:absolute;
 	overflow:hidden;
+	color:white;
+	#onet{
+		margin:0 100px 0 10px;
 
+	}
 
+	ul{
+		list-style:none;
+		padding-left:0;
+
+		li{
+			padding:5px 0;
+			a{
+				color:white;
+				text-decoration: none;
+			}
+			.text{
+				// padding:5px 0 5px 0;
+				}//.text
+
+			ul{
+				list-style:square;
+				color:white;
+				li{
+
+					background-color:darken($darkGray,5%);
+					border:none;
+					padding-left:20px;
+					}// nested li
+				}//nested ul
+			}//li
+		}//ul
 }//#menu
 
 
