@@ -1,10 +1,36 @@
 @import "colors.scss";
-	// margin:.5em .5em;
-
 @import "partials/header.scss";
 @import "partials/body.scss";
 @import "partials/footer.scss";
+body{
+
+}
+
+#wrap-all-the-things{
+	overflow-x:hidden;
+}
+#content{
+	transition: all linear .25s;
+	width:100%;
+	float:left;
+}
+.content-menu-open{
+	margin-left:-270px;
+}//.content-menu-open
+// #menu{
+// 	transition: all linear .25s;
+// 	width:0px;
+// 	h3{
+// 		font-size:0px;
+// 	}//h3
+
+// }//#menu
 
 
-
-// @import"media-queries.scss";
+.menu-menu-open{
+	height:300px;
+	background-color:lighten($darkGray, 20%);
+	width:200px;
+	float:left;
+	display:inline-block;
+}

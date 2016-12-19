@@ -11,374 +11,345 @@
       <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
       <link rel="stylesheet" href="css/style.css">
     </head>
-
     <body ng-app = "myApp">
-      <div ng-controller = "testController">
+        <div ng-controller = "testController"  id = "content">
+          <div id = "content">
+            <!--                                 header                                      -->
 
-        <!--                                 header                                      -->
-
-        <div class = "container">
-          <div class = "col-xs-6" id = "logo">
-            <h1>LOGO</h1>
-          </div>
-          <div class = "col-xs-6" id = "top-right">
-            <div class = "blue-btn-wrapper">
-              <button class = "btn"><span class = "glyphicon glyphicon-search"></span></button>
-              <button class = "btn"><span class = "glyphicon glyphicon-menu-hamburger"></span></button>
+            <div class = "container">
+              <div class = "col-xs-6" id = "logo">
+                <h1>LOGO</h1>
+              </div>
+              <div class = "col-xs-6" id = "top-right">
+                <div class = "blue-btn-wrapper">
+                  <button class = "btn" ><span class = "glyphicon glyphicon-search"></span></button>
+                  <button class = "btn" id = "hamburger"><span class = "glyphicon glyphicon-menu-hamburger"></span></button>
+                </div>
+                <div id = "search-wrapper">
+                  <input type="text" name="search" placeholder="search"><button>GO</button>
+                </div>
+                <div id = "orange-nav-wrapper">
+                  <nav class = "navbar-nav ">
+                    <ul>
+                     <li class="nav-item nav-glyph col-lg-2">
+                      <span class="glyphicon glyphicon glyphicon-user topTiles"></span>
+                      <a class="nav-link" href="#">DIRECTORY</a> 
+                    </li>
+                    <li class="nav-item nav-glyph col-lg-2">
+                      <span class="glyphicon glyphicon-map-marker topTiles"></span>
+                      <a class="nav-link" href="#">LOCATION</a> 
+                    </li>
+                    <li class="nav-item nav-glyph col-lg-2">
+                      <span class="glyphicon glyphicon-time topTiles"></span>
+                      <a class="nav-link" href="#">ENTER TIME</a> 
+                    </li>
+                    <li class="nav-item nav-glyph col-lg-2">
+                      <span class="glyphicon  glyphicon-plane topTiles"></span>
+                      <a class="nav-link" href="#">TRAVEL</a> 
+                    </li>
+                    <li class="nav-item nav-glyph col-lg-2">
+                      <span class="glyphicon glyphicon-list-alt topTiles"></span>
+                      <a class="nav-link" href="#">FORMS</a> 
+                    </li>
+                  </ul>
+                </nav>
+              </div>
             </div>
-            <div id = "search-wrapper">
-              <input type="text" name="search" placeholder="search"><button>GO</button>
-            </div>
-            <div id = "orange-nav-wrapper">
-              <nav class = "navbar-nav ">
+          </div>  
+          <div id = "header-border-wrapper">
+            <div class = "container">
+              <nav class = "border-nav">
                 <ul>
-                 <li class="nav-item nav-glyph col-lg-2">
-                  <span class="glyphicon glyphicon glyphicon-user topTiles"></span>
-                  <a class="nav-link" href="#">DIRECTORY</a> 
-                </li>
-                <li class="nav-item nav-glyph col-lg-2">
-                  <span class="glyphicon glyphicon-map-marker topTiles"></span>
-                  <a class="nav-link" href="#">LOCATION</a> 
-                </li>
-                <li class="nav-item nav-glyph col-lg-2">
-                  <span class="glyphicon glyphicon-time topTiles"></span>
-                  <a class="nav-link" href="#">ENTER TIME</a> 
-                </li>
-                <li class="nav-item nav-glyph col-lg-2">
-                  <span class="glyphicon  glyphicon-plane topTiles"></span>
-                  <a class="nav-link" href="#">TRAVEL</a> 
-                </li>
-                <li class="nav-item nav-glyph col-lg-2">
-                  <span class="glyphicon glyphicon-list-alt topTiles"></span>
-                  <a class="nav-link" href="#">FORMS</a> 
-                </li>
-              </ul>
-            </nav>
+                  <li>
+                    <a class="nav-link" href="#">DEPARTMENTS</a> 
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#">TOOLS</a> 
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#">ASSOCIATE CENTER</a> 
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#">PROJECT DELIVERY</a> 
+                  </li>
+                  <button class = "btn pull-right" id = "welcomeBtn">Welcome, User!</button>
+                </ul>
+              </nav>
+            </div>
           </div>
-        </div>
+          <!--                            end header                                -->
 
-      </div>  
-
-      <div id = "header-border-wrapper">
-        <div class = "container">
-          <nav class = "border-nav">
-            <ul>
-              <li>
-                <a class="nav-link" href="#">DEPARTMENTS</a> 
-              </li>
-              <li>
-                <a class="nav-link" href="#">TOOLS</a> 
-              </li>
-              <li>
-                <a class="nav-link" href="#">ASSOCIATE CENTER</a> 
-              </li>
-              <li>
-                <a class="nav-link" href="#">PROJECT DELIVERY</a> 
-              </li>
-              <button class = "btn pull-right" id = "welcomeBtn">Welcome, User!</button>
-            </ul>
-          </nav>
-        </div>
-
-      </div>
-
-      <!--                            end header                                -->
-
-      <!--                             main content                                 -->
-
-
-      <div class = "container">
-       <div class = "row" id = "main-content">
-         <div class = "col-xs-12  col-sm-6  col-md-6 col-lg-4">
+          <!--                             main content                                 -->
+          <div class = "container">
+           <div class = "row" id = "main-content">
+             <div class = "col-xs-12  col-sm-6  col-md-6 col-lg-4">
+               <div class = "big-box">
+                <div class = "box-wrapper">
+                 <div class = "img-wrapper">
+                  <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8QgEwG3tZudSCN6cb07bLV576USe3lb5j48Zd8vXrbPZvVquRGQ">
+                </div>
+                <div class = big-text-wrapper>
+                  <h5>COMPANY NEWS</h5>
+                  <h6>Military Service Provided Excellent Professional Training for Company Employee</h6>
+                  <p>12/16/16</p>             
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class = "col-xs-12  col-sm-6  col-md-6 col-lg-4">
            <div class = "big-box">
             <div class = "box-wrapper">
-             <div class = "img-wrapper">
-              <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8QgEwG3tZudSCN6cb07bLV576USe3lb5j48Zd8vXrbPZvVquRGQ">
+              <div class = "h-subdivider-top">
+                <div class = "md-txt-wrapper">
+                  <h5>CEO'S CORNER</h5>
+                  <h6>Tile Title Element</h6>
+                  <P>PARAGRAPH</P>
+                </div>
+                <div class = "sm-img-wrapper">
+                  <img src="http://stlbroker.net/images/osproperty/category/1413339233_commercial_building_bg.jpg">
+                </div> 
+              </div>
+              <div class = "h-subdivider-bottom">
+                <div id = "tiny-box-left">
+                  <img src="http://www.cgarchitect.com/content/portfolioitems/2012/11/65067/final_large.jpg">
+                  <h6>THE LATEST NEWS AND BUZZ ON COMPANY PROJECTS</h6>
+                  <P id = "tiny-box-lf-p">12/16/2016</P>
+                </div>
+                <div id = "tiny-box-right">
+                  <img src="http://www.cgarchitect.com/content/portfolioitems/2012/11/65067/final_large.jpg">
+                  <h6>THE LATEST NEWS AND BUZZ ON COMPANY PROJECTS</h6>
+                  <P id = "tiny-box-rt-p">12/16/2016</P>
+                </div>
+              </div>
             </div>
-            <div class = big-text-wrapper>
-              <h5>COMPANY NEWS</h5>
-              <h6>Military Service Provided Excellent Professional Training for Company Employee</h6>
-              <p>12/16/16</p>             
+          </div>
+        </div>
+        <div class = "col-xs-12  col-sm-6  col-md-6 col-lg-4">
+          <div class = "big-box">
+            <div class = "box-wrapper">
+              <div class = "h-subdivider-top">
+                <div class = "md-txt-wrapper" id = "top-box">
+                  <h5>THE COMPANY NEWS</h5>
+                  <h6>Tile Title Element</h6>
+                  <P>12/15/2016</P>
+                </div>
+                <div class = "sm-img-wrapper">
+                  <img src="http://stlbroker.net/images/osproperty/category/1413339233_commercial_building_bg.jpg">
+
+                </div> 
+              </div>
+              <div class = "h-subdivider-bottom">
+                <div class = "md-txt-wrapper" id = "bottom-box">
+                  <h5>THE COMPANY NEWS</h5>
+                  <h6>Tile Title Element</h6>
+                  <P>12/16/2016</P>
+                </div>
+                <div class = "sm-img-wrapper">
+                  <img src="http://buysellestate.net/data/frontImages/gallery/product_image/Commercial-Building-6.jpg">
+                </div> 
+              </div>
+            </div>      
+          </div>
+        </div>
+        <div class = "col-xs-12  col-sm-6  col-md-6 col-lg-4">
+          <div class = "dropdown-box">
+            <h5><span class = "glyphicon glyphicon-play"></span>MARKET NEWS</h5>
+            <div class = "dropdown-content">
+              <ul>
+                <li><span class = "li-text">Student Housing Heats Up in St. Louis - 1/28/13 </span></li>
+                <li><span class = "li-text">Company Selected as Developer for Seven - 2/3/16 </span></li>
+                <li><span class = "li-text">Minneapolis Leaders Welcome Donwtown - 9/30/14 </span></li>
+              </ul>
+              <p>+ view More</p>
+            </div>
+          </div>
+          <div class = "dropdown-box box2">
+            <h5><span class = "glyphicon glyphicon-play"></span>ANNOUNCEMENTS</h5>
+            <div class = "dropdown-content">
+              <ul>
+                <li><span class = "li-text">Student Housing Heats Up in St. Louis - 1/28/13 </span></li>
+                <li><span class = "li-text">Company Selected as Developer for Seven - 2/3/16 </span></li>
+                <li><span class = "li-text">Minneapolis Leaders Welcome Donwtown - 9/30/14 </span></li>
+              </ul>
+              <p>+ view More</p>
+            </div>
+          </div>
+        </div>
+        <div class = "col-xs-12  col-sm-6  col-md-6 col-lg-4">
+          <div class = "dropdown-box orange-lists"><span class = "orange-color-giver">
+            <h5><span class = "glyphicon glyphicon-play"></span>RECENTLY SIGNED</h5></span>
+            <div class = "dropdown-content">
+              <ul class = "event-lists">
+                <li>
+                  <div class = "dropdown-image-wrapper">
+                    <img src="http://warehouse508.org/venue/venue-warehouse-4.jpg">
+                  </div>
+                  <div class = "dropdown-txt-wrapper">        
+                    <p class = "title">Character Communications</p>
+                    <p class = "info">12/25/2016</p>
+                    <p class = "city">Minneapolis, MN</p>
+                  </div>
+                </li>
+                <li>
+                  <div class = "dropdown-image-wrapper">
+                    <img src="http://warehouse508.org/venue/venue-warehouse-4.jpg">
+                  </div>
+                  <div class = "dropdown-txt-wrapper">        
+                    <p class = "title">Character Communications</p>
+                    <p class = "info">12/25/2016</p>
+                    <p class = "city">Minneapolis, MN</p>
+                  </div>
+                </li>
+                <li>
+                  <div class = "dropdown-image-wrapper">
+                    <img src="http://warehouse508.org/venue/venue-warehouse-4.jpg">
+                  </div>
+                  <div class = "dropdown-txt-wrapper">        
+                    <p class = "title">Character Communications</p>
+                    <p class = "info">12/25/2016</p>
+                    <p class = "city">Minneapolis, MN</p>
+                  </div>
+                </li>
+                <li>
+                  <div class = "dropdown-image-wrapper">
+                    <img src="http://warehouse508.org/venue/venue-warehouse-4.jpg">
+                  </div>
+                  <div class = "dropdown-txt-wrapper">        
+                    <p class = "title">Character Communications</p>
+                    <p class = "info">12/25/2016</p>
+                    <p class = "city">Minneapolis, MN</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class = "col-xs-12  col-sm-6  col-md-6 col-lg-4">
+          <div class = "dropdown-box orange-lists">
+            <h5><span class = "glyphicon glyphicon-play"></span>UPCOMING EVENTS</h5>
+            <div class = "dropdown-content">
+              <ul class = "event-lists">
+                <li>
+                  <div class = "dropdown-image-wrapper">
+                    <img src="https://rfclipart.com/image/big/46-e7-24/6-of-november-on-calendar-icon-Download-Royalty-free-Vector-File-EPS-14440.jpg">
+                  </div>
+                  <div class = "dropdown-txt-wrapper">
+                    <p class = "title">Event Title Celebration Gala</p>
+                    <p class = "info">6:00-8:00 pm</p>
+                    <p class = "city">Minneapolis, MN</p>
+                  </div>
+                </li>
+                <li>
+                  <div class = "dropdown-image-wrapper">
+                    <img src="https://rfclipart.com/image/big/46-e7-24/6-of-november-on-calendar-icon-Download-Royalty-free-Vector-File-EPS-14440.jpg">
+                  </div>
+                  <div class = "dropdown-txt-wrapper">
+                    <p class = "title">Event Title Celebration Gala</p>
+                    <p class = "info">6:00-8:00 pm</p>
+                    <p class = "city">Minneapolis, MN</p>
+                  </div>
+                </li>
+
+                <li>
+                  <div class = "dropdown-image-wrapper">
+                    <img src="https://rfclipart.com/image/big/46-e7-24/6-of-november-on-calendar-icon-Download-Royalty-free-Vector-File-EPS-14440.jpg">
+                  </div>
+                  <div class = "dropdown-txt-wrapper">
+                    <p class = "title">Event Title Celebration Gala</p>
+                    <p class = "info">6:00-8:00 pm</p>
+                    <p class = "city">Minneapolis, MN</p>
+                  </div>
+                </li>
+
+                <li>
+                  <div class = "dropdown-image-wrapper">
+                    <img src="https://rfclipart.com/image/big/46-e7-24/6-of-november-on-calendar-icon-Download-Royalty-free-Vector-File-EPS-14440.jpg">
+                  </div>
+                  <div class = "dropdown-txt-wrapper">
+                    <p class = "title">Event Title Celebration Gala</p>
+                    <p class = "info">6:00-8:00 pm</p>
+                    <p class = "city">Minneapolis, MN</p>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-
-      <div class = "col-xs-12  col-sm-6  col-md-6 col-lg-4">
-       <div class = "big-box">
-        <div class = "box-wrapper">
-          <div class = "h-subdivider-top">
-            <div class = "md-txt-wrapper">
-              <h5>CEO'S CORNER</h5>
-              <h6>Tile Title Element</h6>
-              <P>PARAGRAPH</P>
-            </div>
-            <div class = "sm-img-wrapper">
-              <img src="http://stlbroker.net/images/osproperty/category/1413339233_commercial_building_bg.jpg">
-
-            </div> 
+    </div>
+    <div id = "footer-img-wrapper">
+      <!-- <img src="./photos/skyline.jpg"> -->
+    </div>
+    <footer id = "footer-row">
+      <div class = "container" id = "social-icons">
+        <div class = "row">
+          <div class = "col-xs-6">
+            <ul>
+              <div id = "social-text-wrapper">
+                <li><a href="#">FEEDBACK</a></li>
+                <li><a href="#">SUPPORT</a></li>
+                <li><a href="#">COMPANY-GROUP.COM</a></li>
+              </div>
+              <div id = "social-icon-wrapper">
+                <li class = "icons">
+                  <div class = "soc-border goog"><span class = "fa fa-google-plus"></span></div>
+                </li>
+                <li class = "icons">
+                  <div class = "soc-border twit"><span class = "fa fa-twitter"></span></div>
+                </li>
+                <li class = "icons">
+                  <div class = "soc-border tube"><span class = "fa fa-youtube"></span></div>
+                </li>
+              </div>
+            </ul>
           </div>
-          <div class = "h-subdivider-bottom">
-            <div id = "tiny-box-left">
-              <img src="http://www.cgarchitect.com/content/portfolioitems/2012/11/65067/final_large.jpg">
-              <h6>THE LATEST NEWS AND BUZZ ON COMPANY PROJECTS</h6>
-              <P id = "tiny-box-lf-p">12/16/2016</P>
-
-            </div>
-            <div id = "tiny-box-right">
-              <img src="http://www.cgarchitect.com/content/portfolioitems/2012/11/65067/final_large.jpg">
-              <h6>THE LATEST NEWS AND BUZZ ON COMPANY PROJECTS</h6>
-              <P id = "tiny-box-rt-p">12/16/2016</P>
-
-            </div>
-
+        </div>
+      </div>
+      <div class = "container" id = "nav-li">
+        <div class = "row">
+          <div class = "col-xs-12 col-lg-6">
+            <h5>DEPARTMENTS</h5>
+            <ul>
+              <div id = "departments1">
+                <li><a href="#">Information Technology</a></li>
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Construction</a></li>
+                <li><a href="#">Company AE</a></li>
+                <li><a href="#">Forms</a></li>
+                <li><a href="#">Facilities</a></li>
+              </div>
+              <div id = "departments2">
+                <li><a href="#">Associate Center</a></li>
+                <li><a href="#">Accounting</a></li>
+                <li><a href="#">Marketing</a></li>
+                <li><a href="#">Risk</a></li>
+                <li><a href="#">Real Estate</a></li>
+                <li><a href="#">OPL</a></li>
+              </div>
+            </ul>
           </div>
-
-
-
-        </div>
-      </div>
-    </div>
-
-
-    <div class = "col-xs-12  col-sm-6  col-md-6 col-lg-4">
-      <div class = "big-box">
-        <div class = "box-wrapper">
-          <div class = "h-subdivider-top">
-            <div class = "md-txt-wrapper" id = "top-box">
-              <h5>THE COMPANY NEWS</h5>
-              <h6>Tile Title Element</h6>
-              <P>12/15/2016</P>
-            </div>
-            <div class = "sm-img-wrapper">
-              <img src="http://stlbroker.net/images/osproperty/category/1413339233_commercial_building_bg.jpg">
-
-            </div> 
+          <div class = "col-xs-12 col-lg-3">
+            <h5>TECHNICAL SUPPORT</h5>
+            <ul>
+              <li><a href="#">Time Tracking</a></li>
+              <li><a href="#">Technical Support</a></li>
+              <li><a href="#">ONET Frequently Asked Questions</a></li>
+            </ul>
           </div>
-          <div class = "h-subdivider-bottom">
-            <div class = "md-txt-wrapper" id = "bottom-box">
-              <h5>THE COMPANY NEWS</h5>
-              <h6>Tile Title Element</h6>
-              <P>12/16/2016</P>
-            </div>
-            <div class = "sm-img-wrapper">
-              <img src="http://buysellestate.net/data/frontImages/gallery/product_image/Commercial-Building-6.jpg">
-
-            </div> 
+          <div class = "col-xs-12 col-lg-3">
+            <h5>APPLICATIONS</h5>
+            <ul>
+              <li><a href="#">Time Tracking</a></li>
+              <li><a href="#">Technical Support</a></li>
+              <li><a href="#">ONET Frequently Asked Questions</a></li>
+            </ul>        
           </div>
-        </div>      
-      </div>
-    </div>
-    <div class = "col-xs-12  col-sm-6  col-md-6 col-lg-4">
-      <div class = "dropdown-box">
-        <h5><span class = "glyphicon glyphicon-play"></span>MARKET NEWS</h5>
-        <div class = "dropdown-content">
-          <ul>
-            <li><span class = "li-text">Student Housing Heats Up in St. Louis - 1/28/13 </span></li>
-            <li><span class = "li-text">Company Selected as Developer for Seven - 2/3/16 </span></li>
-            <li><span class = "li-text">Minneapolis Leaders Welcome Donwtown - 9/30/14 </span></li>
-          </ul>
-          <p>+ view More</p>
-        </div>
-      </div>
-
-      <div class = "dropdown-box box2">
-        <h5><span class = "glyphicon glyphicon-play"></span>ANNOUNCEMENTS</h5>
-        <div class = "dropdown-content">
-          <ul>
-            <li><span class = "li-text">Student Housing Heats Up in St. Louis - 1/28/13 </span></li>
-            <li><span class = "li-text">Company Selected as Developer for Seven - 2/3/16 </span></li>
-            <li><span class = "li-text">Minneapolis Leaders Welcome Donwtown - 9/30/14 </span></li>
-          </ul>
-          <p>+ view More</p>
-
         </div>
       </div>
     </div>
-
-    <div class = "col-xs-12  col-sm-6  col-md-6 col-lg-4">
-      <div class = "dropdown-box orange-lists"><span class = "orange-color-giver">
-        <h5><span class = "glyphicon glyphicon-play"></span>RECENTLY SIGNED</h5></span>
-        <div class = "dropdown-content">
-          <ul class = "event-lists">
-            <li>
-              <div class = "dropdown-image-wrapper">
-                <img src="http://warehouse508.org/venue/venue-warehouse-4.jpg">
-              </div>
-              <div class = "dropdown-txt-wrapper">        
-                <p class = "title">Character Communications</p>
-                <p class = "info">12/25/2016</p>
-                <p class = "city">Minneapolis, MN</p>
-              </div>
-            </li>
-            <li>
-              <div class = "dropdown-image-wrapper">
-                <img src="http://warehouse508.org/venue/venue-warehouse-4.jpg">
-              </div>
-              <div class = "dropdown-txt-wrapper">        
-                <p class = "title">Character Communications</p>
-                <p class = "info">12/25/2016</p>
-                <p class = "city">Minneapolis, MN</p>
-              </div>
-            </li>
-            <li>
-              <div class = "dropdown-image-wrapper">
-                <img src="http://warehouse508.org/venue/venue-warehouse-4.jpg">
-              </div>
-              <div class = "dropdown-txt-wrapper">        
-                <p class = "title">Character Communications</p>
-                <p class = "info">12/25/2016</p>
-                <p class = "city">Minneapolis, MN</p>
-              </div>
-            </li>
-            <li>
-              <div class = "dropdown-image-wrapper">
-                <img src="http://warehouse508.org/venue/venue-warehouse-4.jpg">
-              </div>
-              <div class = "dropdown-txt-wrapper">        
-                <p class = "title">Character Communications</p>
-                <p class = "info">12/25/2016</p>
-                <p class = "city">Minneapolis, MN</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class = "col-xs-12  col-sm-6  col-md-6 col-lg-4">
-      <div class = "dropdown-box orange-lists">
-        <h5><span class = "glyphicon glyphicon-play"></span>UPCOMING EVENTS</h5>
-        <div class = "dropdown-content">
-          <ul class = "event-lists">
-            <li>
-              <div class = "dropdown-image-wrapper">
-                <img src="https://rfclipart.com/image/big/46-e7-24/6-of-november-on-calendar-icon-Download-Royalty-free-Vector-File-EPS-14440.jpg">
-              </div>
-              <div class = "dropdown-txt-wrapper">
-                <p class = "title">Event Title Celebration Gala</p>
-                <p class = "info">6:00-8:00 pm</p>
-                <p class = "city">Minneapolis, MN</p>
-              </div>
-            </li>
-            <li>
-              <div class = "dropdown-image-wrapper">
-                <img src="https://rfclipart.com/image/big/46-e7-24/6-of-november-on-calendar-icon-Download-Royalty-free-Vector-File-EPS-14440.jpg">
-              </div>
-              <div class = "dropdown-txt-wrapper">
-                <p class = "title">Event Title Celebration Gala</p>
-                <p class = "info">6:00-8:00 pm</p>
-                <p class = "city">Minneapolis, MN</p>
-              </div>
-            </li>
-
-            <li>
-              <div class = "dropdown-image-wrapper">
-                <img src="https://rfclipart.com/image/big/46-e7-24/6-of-november-on-calendar-icon-Download-Royalty-free-Vector-File-EPS-14440.jpg">
-              </div>
-              <div class = "dropdown-txt-wrapper">
-                <p class = "title">Event Title Celebration Gala</p>
-                <p class = "info">6:00-8:00 pm</p>
-                <p class = "city">Minneapolis, MN</p>
-              </div>
-            </li>
-
-            <li>
-              <div class = "dropdown-image-wrapper">
-                <img src="https://rfclipart.com/image/big/46-e7-24/6-of-november-on-calendar-icon-Download-Royalty-free-Vector-File-EPS-14440.jpg">
-              </div>
-              <div class = "dropdown-txt-wrapper">
-                <p class = "title">Event Title Celebration Gala</p>
-                <p class = "info">6:00-8:00 pm</p>
-                <p class = "city">Minneapolis, MN</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-
-  </div>
-</div>
-</div>   
-<div id = "footer-img-wrapper">
-  <img src="https://www.dropbox.com/s/rh5tlnnq78hwr5c/minneapolis%20skyline_5415.png?dl=0">
-</div>
-<footer id = "footer-row">
-  <div class = "container" id = "social-icons">
-    <div class = "row">
-      <div class = "col-xs-6">
-        <ul>
-
-          <div id = "social-text-wrapper">
-            <li><a href="#">FEEDBACK</a></li>
-            <li><a href="#">SUPPORT</a></li>
-            <li><a href="#">COMPANY-GROUP.COM</a></li>
-          </div>
-
-          <div id = "social-icon-wrapper">
-            <li class = "icons">
-              <div class = "soc-border goog"><span class = "fa fa-google-plus"></span></div>
-            </li>
-            <li class = "icons">
-              <div class = "soc-border twit"><span class = "fa fa-twitter"></span></div>
-            </li>
-            <li class = "icons">
-              <div class = "soc-border tube"><span class = "fa fa-youtube"></span></div>
-            </li>
-          </div>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-
-<div class = "container">
-  <div class = "row">
-    <div class = "col-xs-12 col-lg-6">
-      <h5>DEPARTMENTS</h5>
-      <ul>
-        <div id = "departments1">
-          <li><a href="#">Information Technology</a></li>
-          <li><a href="#">Legal</a></li>
-          <li><a href="#">Construction</a></li>
-          <li><a href="#">Company AE</a></li>
-          <li><a href="#">Forms</a></li>
-          <li><a href="#">Facilities</a></li>
-        </div>
-        <div id = "departments2">
-          <li><a href="#">Associate Center</a></li>
-          <li><a href="#">Accounting</a></li>
-          <li><a href="#">Marketing</a></li>
-          <li><a href="#">Risk</a></li>
-          <li><a href="#">Real Estate</a></li>
-          <li><a href="#">OPL</a></li>
-        </div>
-      </ul>
-    </div>
-    <div class = "col-xs-12 col-lg-3">
-      <h5>TECHNICAL SUPPORT</h5>
-      <ul>
-        <li><a href="#">Time Tracking</a></li>
-        <li><a href="#">Technical Support</a></li>
-        <li><a href="#">ONET Frequently Asked Questions</a></li>
-      </ul>
-    </div>
-    <div class = "col-xs-12 col-lg-3">
-      <h5>APPLICATIONS</h5>
-      <ul>
-        <li><a href="#">Time Tracking</a></li>
-        <li><a href="#">Technical Support</a></li>
-        <li><a href="#">ONET Frequently Asked Questions</a></li>
-      </ul>        
-    </div>
-  </div>
-</div>
-</div>
 </footer>
+<div id = "menu">
+  <h3>this is the menu</h3>
+</div>
 </body>
 </html>

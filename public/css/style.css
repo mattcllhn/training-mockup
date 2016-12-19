@@ -327,7 +327,7 @@ h1 {
   #main-content .box2 {
     margin-top: 30px; }
   #main-content .orange-lists {
-    background-color: white;
+    background-color: #f79840;
     color: white; }
     #main-content .orange-lists h5 {
       background-color: #f79840;
@@ -481,3 +481,21 @@ footer ul li {
     float: left; }
     #social-icons ul #social-icon-wrapper li .goog {
       padding-top: 2px; } }
+
+#wrap-all-the-things {
+  overflow-x: hidden; }
+
+#content {
+  transition: all linear .25s;
+  width: 100%;
+  float: left; }
+
+.content-menu-open {
+  margin-left: -270px; }
+
+.menu-menu-open {
+  height: 300px;
+  background-color: #7c7c7c;
+  width: 200px;
+  float: left;
+  display: inline-block; }
