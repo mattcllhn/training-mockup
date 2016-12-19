@@ -493,9 +493,15 @@ footer ul li {
 .content-menu-open {
   margin-left: -270px; }
 
-.menu-menu-open {
-  height: 300px;
+.menu {
+  transition: all linear .25s;
+  width: 0px;
+  height: 100%;
   background-color: #7c7c7c;
-  width: 200px;
   float: left;
-  display: inline-block; }
+  display: inline-block;
+  position: absolute;
+  overflow: hidden; }
+
+.menu-menu-open {
+  width: 270px; }

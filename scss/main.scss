@@ -17,20 +17,20 @@ body{
 .content-menu-open{
 	margin-left:-270px;
 }//.content-menu-open
-// #menu{
-// 	transition: all linear .25s;
-// 	width:0px;
-// 	h3{
-// 		font-size:0px;
-// 	}//h3
+.menu{
+	transition: all linear .25s;
+	width:0px;
+	height:100%;
+	background-color:lighten($darkGray, 20%);
+	float:left;
+	display:inline-block;
+	position:absolute;
+	overflow:hidden;
 
-// }//#menu
+
+}//#menu
 
 
 .menu-menu-open{
-	height:300px;
-	background-color:lighten($darkGray, 20%);
-	width:200px;
-	float:left;
-	display:inline-block;
+	width:270px;
 }

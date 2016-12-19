@@ -15,7 +15,7 @@ $(document).ready(function(){
 
 $('#hamburger').click(function(){
 	$('#content').toggleClass('content-menu-open');
-	$('#menu').toggleClass('menu-menu-open');
+	$('.menu').toggleClass('menu-menu-open');
 
 
 });//ham on click
