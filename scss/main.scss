@@ -5,7 +5,6 @@
 
 
 /* main.scss*/
-
 #wrap-all-the-things{
 	overflow-x:hidden;
 }
@@ -20,7 +19,7 @@
 .menu{
 	transition: all linear .25s;
 	width:0px;
-	height:100%;
+	height:220%;
 	background-color:lighten($darkGray, 20%);
 	float:left;
 	display:inline-block;
@@ -35,6 +34,10 @@
 	ul{
 		list-style:none;
 		padding-left:0;
+		:first-child{
+			cursor:pointer;
+
+		}//:first-child
 
 		li{
 			padding:5px 0;
@@ -49,8 +52,11 @@
 			ul{
 				list-style:square;
 				color:white;
+				// :first-child{
+				// 	cursor:default;
+				// }
 				li{
-
+					@include orange-nav;
 					background-color:darken($darkGray,5%);
 					border:none;
 					padding-left:20px;

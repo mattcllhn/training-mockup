@@ -25,15 +25,49 @@
 					}//a
 				}//li
 			}//ul
-
-
-			button{
+		button{
 				display:none;
 			}//button
 		}//.border-nav
 	}//.header-border-wrapper
-
 	}//%placeholder
+
+	@mixin orange-nav{
+				#orange-nav-wrapper{
+				display:block;
+				width:66%;
+				float:right;
+				padding-top:15px;
+				nav{
+					float:right;
+					ul{
+						padding:0;
+						.nav-glyph{
+							background-color: $orange;
+							height:7em;
+							margin:0 .5em 0 .5em;
+							padding-top:3em;
+							width: 9em;
+							font-size: .5em;
+							list-style:none;
+							.topTiles{
+								color:white;
+								font-size: 27px;
+								position: absolute;
+								top: 15%;
+								left:26%;
+			   			 }//.topTiles
+			   			 a{
+			   			 	color:#fff;
+			   			 	margin-left:-1.5em;
+			   			 	position:absolute;
+			   			 	bottom:1%;
+						}//a
+				}//.nav-glyph
+				}//ul
+				}//nav
+			}//#orange-nav-wrapper
+			}//@orange-nav
 // --------------------------------------------------mixins---------------------------------------//
 
 
@@ -122,7 +156,7 @@ h1{
 	}//col-md
 	@media (min-width: 1200px) { 
 
-
+		@include orange-nav;
 		@include header-border;
 		.blue-btn-wrapper{
 			display:none;
@@ -192,40 +226,7 @@ h1{
 			#top-right{
 				padding-right:0;
 			}
-			#orange-nav-wrapper{
-				display:block;
-				width:66%;
-				float:right;
-				padding-top:15px;
-				nav{
-					float:right;
-					ul{
-						padding:0;
-						.nav-glyph{
-							background-color: $orange;
-							height:7em;
-							margin:0 .5em 0 .5em;
-							padding-top:3em;
-							width: 9em;
-							font-size: .5em;
-							list-style:none;
-							.topTiles{
-								color:white;
-								font-size: 27px;
-								position: absolute;
-								top: 15%;
-								left:26%;
-			   			 }//.topTiles
-			   			 a{
-			   			 	color:#fff;
-			   			 	margin-left:-1.5em;
-			   			 	position:absolute;
-			   			 	bottom:1%;
-						}//a
-				}//.nav-glyph
-				}//ul
-				}//nav
-			}//#orange-nav-wrapper
+
 	}//col-lg
 
 
