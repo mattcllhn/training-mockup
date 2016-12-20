@@ -487,7 +487,7 @@ footer ul li {
   overflow-x: hidden; }
 
 #content {
-  transition: all linear .25s;
+  transition: all linear .1s;
   width: 100%;
   float: left; }
 
@@ -495,7 +495,7 @@ footer ul li {
   margin-left: -270px; }
 
 .menu {
-  transition: all linear .25s;
+  transition: all linear .1s;
   width: 0px;
   height: 220%;
   background-color: #7c7c7c;
@@ -505,7 +505,8 @@ footer ul li {
   overflow: hidden;
   color: white; }
   .menu #onet {
-    margin: 0 100px 0 10px; }
+    margin: 0 100px 0 10px;
+    display: inline-block; }
   .menu ul {
     list-style: none;
     padding-left: 0; }
@@ -516,13 +517,15 @@ footer ul li {
       .menu ul li a {
         color: white;
         text-decoration: none; }
+      .menu ul li .caret {
+        transform: rotate(-90deg); }
       .menu ul li ul {
         list-style: square;
         color: white; }
         .menu ul li ul li {
           background-color: #3c3c3c;
           border: none;
-          padding-left: 20px; }
+          padding: 0 20px; }
           .menu ul li ul li #orange-nav-wrapper {
             display: block;
             width: 66%;
@@ -551,6 +554,15 @@ footer ul li {
                     margin-left: -1.5em;
                     position: absolute;
                     bottom: 1%; }
+          .menu ul li ul li #orange-nav-wrapper {
+            display: inline-block;
+            width: 100%;
+            float: none; }
+            .menu ul li ul li #orange-nav-wrapper nav {
+              float: left; }
+              .menu ul li ul li #orange-nav-wrapper nav ul .nav-glyph {
+                margin: .5em;
+                float: left; }
 
 .menu-menu-open {
   width: 270px; }

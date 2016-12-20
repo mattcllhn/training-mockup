@@ -9,7 +9,7 @@
 	overflow-x:hidden;
 }
 #content{
-	transition: all linear .25s;
+	transition: all linear .1s;
 	width:100%;
 	float:left;
 }
@@ -17,7 +17,7 @@
 	margin-left:-270px;
 }//.content-menu-open
 .menu{
-	transition: all linear .25s;
+	transition: all linear .1s;
 	width:0px;
 	height:220%;
 	background-color:lighten($darkGray, 20%);
@@ -28,6 +28,7 @@
 	color:white;
 	#onet{
 		margin:0 100px 0 10px;
+		display:inline-block;
 
 	}
 
@@ -48,7 +49,9 @@
 			.text{
 				// padding:5px 0 5px 0;
 				}//.text
-
+			.caret{
+				transform:rotate(-90deg);
+			}
 			ul{
 				list-style:square;
 				color:white;
@@ -59,7 +62,22 @@
 					@include orange-nav;
 					background-color:darken($darkGray,5%);
 					border:none;
-					padding-left:20px;
+					padding:0 20px;
+					#orange-nav-wrapper{
+					display:inline-block;
+					width:100%;
+					float:none;
+						nav{
+							float:left;
+							ul{
+								.nav-glyph{
+									margin:.5em;
+									float:left;
+
+								}//.nav-glyph
+							}//ul
+						}//nav
+					}//#orange-nav-wrapper
 					}// nested li
 				}//nested ul
 			}//li

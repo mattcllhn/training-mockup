@@ -14,11 +14,24 @@ $(document).ready(function(){
 
 
 $('#hamburger').click(function(){
-	$('#content').toggleClass('content-menu-open');
-	$('.menu').toggleClass('menu-menu-open');
-
-
+	toggleMenu()
 });//ham on click
+$('#onet').click(function(){
+	toggleMenu();
+});//onet on click
+
+$('.text').click(function(){
+	if($(this).parent().find('ul').hasClass('collapse')){
+		num = 0;
+	}else{
+		num = -90;
+	}
+	$(this).parent().find('ul').toggleClass('collapse');
+	$(this).parent().find('.caret').css('transform','rotate('+num+'deg)');
+});//nav text on mousedown
+
+
+$('.text').parent().find('ul').addClass('collapse');
 
 if($(window).width()>= 1200){
 			moveTheThing()
@@ -46,3 +59,8 @@ myApp.controller('testController',['$scope',function($scope){
 			$('#social-icons').insertBefore($('#nav-li'));
 			$('#social-text-wrapper').insertBefore($('#social-icon-wrapper'));
 	}//moveTheThingBack
+
+	function toggleMenu(){
+	$('#content').toggleClass('content-menu-open');
+	$('.menu').toggleClass('menu-menu-open');
+}//toggleMenu
