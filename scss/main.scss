@@ -42,6 +42,7 @@
 
 		li{
 			padding:5px 0;
+			transition: all linear .1s;
 			a{
 				color:white;
 				text-decoration: none;
@@ -88,3 +89,9 @@
 .menu-menu-open{
 	width:270px;
 }
+@media (min-width: 1200px) { 
+.menu{
+	display:none;
+}//.menu
+
+	}//col-lg

@@ -8,7 +8,9 @@ $(document).ready(function(){
 			moveTheThingBack();
 		}else if($(window).width()>= 1200){
 			moveTheThing()
-		}
+			$('#content').removeClass('content-menu-open');
+			$('.menu').removeClass('menu-menu-open');
+		}	
 	});//window.resize
 
 
@@ -36,6 +38,15 @@ $('.text').parent().find('ul').addClass('collapse');
 if($(window).width()>= 1200){
 			moveTheThing()
 		}//window.width conditional
+
+
+$('.glyphicon-search').click(function(){
+	console.log($(this).css('display') =='none');
+});//glyphicon-search
+
+
+
+
 });//docready
 
 var myApp = angular.module('myApp',[]);

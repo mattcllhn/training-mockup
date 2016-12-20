@@ -513,7 +513,8 @@ footer ul li {
     .menu ul :first-child {
       cursor: pointer; }
     .menu ul li {
-      padding: 5px 0; }
+      padding: 5px 0;
+      transition: all linear .1s; }
       .menu ul li a {
         color: white;
         text-decoration: none; }
@@ -566,3 +567,7 @@ footer ul li {
 
 .menu-menu-open {
   width: 270px; }
+
+@media (min-width: 1200px) {
+  .menu {
+    display: none; } }
