@@ -3,10 +3,13 @@ console.log('JS');
 $(document).ready(function(){
 	console.log('JQ');
 
+
 	$(window).resize(function(){
-		if($(window).width()< 1200){
+		var div = $('.blue-btn-wrapper').css('display');
+		if(div == 'block'){
+
 			moveTheThingBack();
-		}else if($(window).width()>= 1200){
+		}else if(div == 'none'){
 			moveTheThing()
 			$('#content').removeClass('content-menu-open');
 			$('.menu').removeClass('menu-menu-open');
