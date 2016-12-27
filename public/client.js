@@ -59,7 +59,7 @@ myApp.controller('testController',['$scope',function($scope){
 
 
 	
-}]);
+}]);//testController
 
 
 

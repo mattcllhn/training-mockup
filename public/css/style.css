@@ -1,3 +1,7 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+body {
+  font-family: 'Open Sans',sans-serif; }
+
 /*header.scss*/
 h1 {
   margin: 20px 0 20px -15px; }
@@ -23,7 +27,7 @@ h1 {
       border-color: #0a1caa;
       outline: none; }
     .blue-btn-wrapper .btn span {
-      margin: -3px; }
+      margin: -2.9px; }
 
 #header-border-wrapper {
   height: 3px;
@@ -220,7 +224,8 @@ h1 {
       top: 15px;
       bottom: 15px;
       right: 0px;
-      left: 0px; }
+      left: 0px;
+      cursor: pointer; }
       #main-content .big-box .box-wrapper .img-wrapper, #main-content .big-box .box-wrapper .sm-img-wrapper, #main-content .big-box .box-wrapper .h-subdivider-bottom .sm-img-wrapper, #main-content .short-box .box-wrapper .img-wrapper, #main-content .short-box .box-wrapper .sm-img-wrapper, #main-content .short-box .box-wrapper .h-subdivider-bottom .sm-img-wrapper, #main-content .small-box .box-wrapper .img-wrapper, #main-content .small-box .box-wrapper .sm-img-wrapper, #main-content .small-box .box-wrapper .h-subdivider-bottom .sm-img-wrapper {
         position: relative;
         width: 100%;
